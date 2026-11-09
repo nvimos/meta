@@ -1,0 +1,9 @@
+schema: spec-driven
+context: |
+  Planning repo for On-Screen Nvim (github.com/nvimos/onscreen), a Neovim 0.11+ config on Windows
+  with in-repo plugins (github.com/tox2ik/genja-*). Each change mirrors one Backlog.md task
+  (backlog/tasks/task-<n>); proposal.md says which. tasks.md keeps building (## 1. Build) and
+  trying by hand (## 2. Verify) apart. Finished and dropped changes are in changes/archive/.
+rules:
+  tasks:
+    - Keep build steps and verify steps in separate sections.

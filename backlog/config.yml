@@ -1,0 +1,7 @@
+project_name: "nvimos meta"
+default_status: "To Do"
+# Needs Test: built, waiting to be tried by hand; kept apart from Done so verifying is its own step
+statuses: ["To Do", "In Progress", "Needs Test", "Done", "Dropped"]
+labels: []
+date_format: yyyy-mm-dd
+auto_commit: false
