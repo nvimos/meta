@@ -19,12 +19,12 @@ TASK-17	Needs Test	diagnostics-leader-ttt-disables-all-diagnostics	diagnostics: 
 TASK-18	Needs Test	lint-valesync-runs-by-itself-when	lint: :ValeSync runs by itself when the shared styles are missing	todo-ideas.md
 TASK-19	Done	abbrev-fail-cr-searches-for-fail	abbrev: /FAIL`<CR>` searches for "/FAIL`<C-]><CR>`" (literal text, no search)	todo-ideas.md
 TASK-20	Needs Test	completion-blink-cmdline-completion-of-shell	completion: blink cmdline completion of shell commands (`!cmd`, `:terminal cmd`) is...	todo-ideas.md
-TASK-21	In Progress	zen-modes-switch-between-layouts-by	zen modes: switch between layouts by task	todo-ideas.md
+TASK-21	Needs Test	zen-modes-switch-between-layouts-by	zen modes: switch between layouts by task	todo-ideas.md
 TASK-22	Needs Test	php-project-out-of-the-box	PHP project out of the box	todo-ideas.md
 TASK-23	Needs Test	go-project-out-of-the-box	Go project out of the box, same feel as PHP	todo-ideas.md
-TASK-24	To Do	nvim-as-the-interface-to-the	nvim as the interface to the OS for coding work: shell, terminal, pwsh, Git Bash, git	todo-ideas.md
-TASK-25	To Do	control-wsl-instances-and-docker-containers	control WSL instances and Docker containers from nvim	todo-ideas.md
-TASK-26	To Do	kubernetes-yaml-write-manifests-with-the	Kubernetes YAML: write manifests with the spec at hand, started before 2027, alongside...	todo-ideas.md
+TASK-24	Needs Test	nvim-as-the-interface-to-the	nvim as the interface to the OS for coding work: shell, terminal, pwsh, Git Bash, git	todo-ideas.md
+TASK-25	Needs Test	control-wsl-instances-and-docker-containers	control WSL instances and Docker containers from nvim	todo-ideas.md
+TASK-26	Needs Test	kubernetes-yaml-write-manifests-with-the	Kubernetes YAML: write manifests with the spec at hand, started before 2027, alongside...	todo-ideas.md
 TASK-27	To Do	llm-chat-in-a-buffer-like	LLM chat in a buffer, like the browser chat	todo-ideas.md
 TASK-28	Needs Test	php-debugging-that-works-part-of	PHP debugging that works, part of v2026	todo-ideas.md
 TASK-29	To Do	try-the-new-diff-viewers-and	try the new diff viewers and their modes	todo-ideas.md

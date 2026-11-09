@@ -1,7 +1,7 @@
 ---
 id: TASK-26
 title: 'Kubernetes YAML: write manifests with the spec at hand, started before 2027, alongside...'
-status: To Do
+status: Needs Test
 assignee: []
 created_date: '2026-11-05'
 labels:
@@ -28,6 +28,16 @@ Kubernetes YAML: write manifests with the spec at hand, started before 2027, alo
 - more languages found missing (terraform, helm, alloy, promql, sql, toml, systemd, parsers, linters): todo-ideas/grafana-k8s-terraform-langs.md (2026-11-07)
 
 From `todo-ideas.md`, section "ideas october".
+
+## Branch
+
+Built 2026-11-05 and 2026-11-10 on `PR-k8s-yaml (plugin genja-completion011 PR-yaml-lang)` in the config repo (7d651e8 .. c5fb0ac; plugin f50b6aa), not merged yet:
+yamlls, yaml-companion, :K8sHelpBuild + gK, kubectl explain via wsl -d minikube, .k8s-version, SchemaStore.nvim.
+
+## Verify
+
+- [ ] the test session in the branch's `todo-test/k8s-yaml.md` (guided, one step per question)
+- [ ] merge the branch into the working branch
 
 ## Original notes
 

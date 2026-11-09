@@ -1,7 +1,7 @@
 ---
 id: TASK-21
 title: 'zen modes: switch between layouts by task'
-status: In Progress
+status: Needs Test
 assignee: []
 created_date: '2026-11-05'
 labels:
@@ -34,6 +34,16 @@ From `todo-ideas.md`, section "ideas october".
 ## Acceptance Criteria
 
 - [x] #1 z0 restores the window size in nvim-qt: a wait between frameless and maximize (98aa8a4)
+
+## Branch
+
+Built 2026-11-05 and 2026-11-10 on `PR-zen-z3` in the config repo (e371803, c0ae83d, 58289ea), not merged yet:
+z3 debug layout, z2 with limited diagnostics, z0 restores; z3 maximizes nvim-qt, no colorcolumn.
+
+## Verify
+
+- [ ] the test session in the branch's `todo-test/zen-modes.md` (guided, one step per question)
+- [ ] merge the branch into the working branch
 
 ## Original notes
 

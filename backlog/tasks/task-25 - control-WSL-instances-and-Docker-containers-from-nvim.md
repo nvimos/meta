@@ -1,7 +1,7 @@
 ---
 id: TASK-25
 title: 'control WSL instances and Docker containers from nvim'
-status: To Do
+status: Needs Test
 assignee: []
 created_date: '2026-11-05'
 labels:
@@ -20,6 +20,16 @@ control WSL instances and Docker containers from nvim
   picker for docker ps/images/compose (logs, exec shell, restart); check existing plugins first
 
 From `todo-ideas.md`, section "ideas october".
+
+## Branch
+
+Built 2026-11-05 and 2026-11-10 on `PR-wsl-docker` in the config repo (fb2113e .. db842e3), not merged yet:
+:Wsl and :Docker pickers, :WslFterm, F2 compose; docker defaults to the phpactor distro.
+
+## Verify
+
+- [ ] the test session in the branch's `todo-test/wsl-docker.md` (guided, one step per question)
+- [ ] merge the branch into the working branch
 
 ## Original notes
 
