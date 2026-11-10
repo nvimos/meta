@@ -14,7 +14,7 @@ give the empty `lua/genja/ui` directory real code or remove it
 
 ## Impact
 
-- Source: `C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md`, section "cleanup release 2026"
+- Source: `legacy/todo-cleanup-release-2026.md`, section "cleanup release 2026"
 
 ## Original notes
 

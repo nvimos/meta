@@ -84,12 +84,12 @@ TASK-82	To Do	lumix-adaptation	Lumix adaptation	todo-2027.md
 TASK-83	To Do	sessions-a-saved-shell-comes-back	sessions: a saved shell comes back in its current dir, not the one it was started in...	todo-2028.md
 TASK-84	To Do	try-the-windows-multiplexers-before-the	try the Windows multiplexers, before the light-weight session idea above	todo-2028.md
 TASK-85	To Do	macos-adaptation	macOS adaptation	todo-2028.md
-TASK-86	To Do	verify-a-clean-machine-install-on	verify a clean-machine install on Linux, not just Windows	C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md
-TASK-87	To Do	delete-or-fill-the-zero-byte	delete or fill the zero-byte `lua/genja/map-jolemak.lua` stub	C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md
-TASK-88	To Do	collapse-the-lua-lazyp-unused-folders	collapse the `lua/lazyp/unused-*` folders	C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md
-TASK-89	To Do	move-or-document-lua-genja-vimrc	move or document `lua/genja/vimrc.almalinux.vim`	C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md
-TASK-90	To Do	give-the-empty-lua-genja-ui	give the empty `lua/genja/ui` directory real code or remove it	C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md
-TASK-91	To Do	trim-the-f2-subsystem-readmes	trim the F2 subsystem readmes	C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md
-TASK-92	To Do	experimental-zexp-files-keep-move-or	experimental `zexp-*` files: keep, move or delete	C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md
-TASK-93	To Do	alternate-readmes-and-do-not-readme	alternate readmes and `do.not.readme.md`: merge or remove	C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md
-TASK-94	Done	todo-files-out-of-the-config	todo files out of the config repo into nvimos/meta	C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md
+TASK-86	To Do	verify-a-clean-machine-install-on	verify a clean-machine install on Linux, not just Windows	legacy/todo-cleanup-release-2026.md
+TASK-87	To Do	delete-or-fill-the-zero-byte	delete or fill the zero-byte `lua/genja/map-jolemak.lua` stub	legacy/todo-cleanup-release-2026.md
+TASK-88	To Do	collapse-the-lua-lazyp-unused-folders	collapse the `lua/lazyp/unused-*` folders	legacy/todo-cleanup-release-2026.md
+TASK-89	To Do	move-or-document-lua-genja-vimrc	move or document `lua/genja/vimrc.almalinux.vim`	legacy/todo-cleanup-release-2026.md
+TASK-90	To Do	give-the-empty-lua-genja-ui	give the empty `lua/genja/ui` directory real code or remove it	legacy/todo-cleanup-release-2026.md
+TASK-91	To Do	trim-the-f2-subsystem-readmes	trim the F2 subsystem readmes	legacy/todo-cleanup-release-2026.md
+TASK-92	To Do	experimental-zexp-files-keep-move-or	experimental `zexp-*` files: keep, move or delete	legacy/todo-cleanup-release-2026.md
+TASK-93	To Do	alternate-readmes-and-do-not-readme	alternate readmes and `do.not.readme.md`: merge or remove	legacy/todo-cleanup-release-2026.md
+TASK-94	Done	todo-files-out-of-the-config	todo files out of the config repo into nvimos/meta	legacy/todo-cleanup-release-2026.md

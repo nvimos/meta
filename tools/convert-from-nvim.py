@@ -7,7 +7,7 @@ import re
 import sys
 
 SRC, DST = sys.argv[1], sys.argv[2]
-FILES = ['todo-ideas.md', 'todo-2026-neovim011.md', 'todo-2027.md', 'todo-2028.md', 'C:/Users/jazzo/AppData/Local/Temp/claude/17f1b8d43c23617b/a7774b26-80f0-45a1-97aa-bdda65c32ea5/scratchpad/meta/todo-cleanup-release-2026.md']
+FILES = ['todo-ideas.md', 'todo-2026-neovim011.md', 'todo-2027.md', 'todo-2028.md', 'legacy/todo-cleanup-release-2026.md']
 TODAY = '2026-11-10'
 
 ITEM = re.compile(r'^-\s?\[(.)\]\s?(.*)$')
