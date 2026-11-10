@@ -1,0 +1,13 @@
+I'm building a GUI frontend for Neovim that communicates over msgpack-RPC. Neovim's existing UI protocol and autocommand system were designed for a terminal redrawing itself, not for an application maintaining a synchronized client-side state model. I need a patch against Neovim nightly (0.12 or 0.13) that adds a streaming structured-update API.
+The design goal is change-data-capture semantics: Neovim becomes the source of truth and emits typed, ordered events whenever editor state changes, so an external client can maintain a live synchronized model without polling.
+Requirements:
+
+A new RPC entry point, modeled on nvim_attach_ui, called nvim_attach_ui_stream. The client passes an options table declaring which state domains it subscribes to: buffers, windows, tabs, diagnostics, marks, signs. Unsubscribed domains generate no events.
+Each event is a structured msgpack object, not a redraw command. For a buffer event it carries: buffer handle, monotonic sequence number (per-domain), reason code (content_changed, lines_inserted, lines_deleted, option_set, renamed, etc.), and a payload with the actual delta (old range, new range, inserted/deleted lines). Full buffer text is only sent on explicit request or during resync.
+Sequence numbers are per-domain and strictly monotonic so the client can detect gaps and know exactly when it must resync.
+A resync mechanism. If the client detects a gap or sends nvim_ui_stream_resync(domain), Neovim walks its internal state for that domain and emits a full snapshot tagged with the current sequence number so the client can rebuild without polling.
+Events must fire from the same internal hooks Neovim already uses for redraw and autocommands. Zero overhead in the default path when no client is attached.
+Maintainability constraint (critical): Isolate all new code in a single new file (e.g. src/nvim/ui_stream.c + header). Do not splice into the redraw pipeline or ui.c directly. Register callbacks only through existing public or semi-public extension points (autocommand hooks, UI event callbacks, etc.) so the patch remains a small, obvious seam that is easy to rebase when upstream refactors. Tag every event with an API version field so clients built against v1 do not break when v2 fields are added.
+Document the new API in the Lua reference and add tests using the existing test harness that spawn a headless instance, attach a mock client, trigger edits, and assert the event stream matches expectations.
+
+Start with the buffer domain only. Get content changes, option changes, and the resync path working end-to-end before touching windows or diagnostics. Use the existing UI protocol code in src/nvim/ui.c and the msgpack-RPC layer in src/nvim/msgpack_rpc/ as reference for how events currently flow.
