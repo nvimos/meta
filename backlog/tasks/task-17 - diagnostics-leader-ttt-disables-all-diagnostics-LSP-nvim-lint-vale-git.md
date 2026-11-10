@@ -30,7 +30,7 @@ From `todo-ideas.md`, section "ideas october".
 Hands-on checks, kept apart from the build steps.
 
 - [x] zen z1/z2 turn diagnostics off; z0 turns them on again (unless off before zen) with the limit of 3; untested (333bf79)
-- [ ] try it by hand (marked untested in the notes)
+- [x] try it by hand (marked untested in the notes)
 
 ## Original notes
 
