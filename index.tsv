@@ -93,3 +93,4 @@ TASK-91	To Do	trim-the-f2-subsystem-readmes	trim the F2 subsystem readmes	legacy
 TASK-92	To Do	experimental-zexp-files-keep-move-or	experimental `zexp-*` files: keep, move or delete	legacy/todo-cleanup-release-2026.md
 TASK-93	To Do	alternate-readmes-and-do-not-readme	alternate readmes and `do.not.readme.md`: merge or remove	legacy/todo-cleanup-release-2026.md
 TASK-94	Done	todo-files-out-of-the-config	todo files out of the config repo into nvimos/meta	legacy/todo-cleanup-release-2026.md
+TASK-95	Needs Test	typescript-projects-out-of-the-box	TypeScript projects out of the box	(new 2026-11-10)
