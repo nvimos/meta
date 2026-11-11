@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-11-05'
 labels:
+  - nvim-config
   - todo-ideas
   - ideas-october
   - todo-2026-neovim011
@@ -26,6 +27,12 @@ Go project out of the box, same feel as PHP
 
 From `todo-ideas.md`, section "ideas october".
 - v2026 release checklist item 13 (was TASK-53): Go gaps: golangci-lint, gomod/gotmpl parsers, one test runner
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-57 - guide-lint-go-js-css.md`: golangci-lint, eslint, stylelint (2026-11-05)
+  - `backlog/docs/doc-58 - guide-neotest-golang.md`: Go tests through neotest (2026-11-05)
+  - `backlog/docs/doc-59 - guide-parsers-web-go.md`: Treesitter parsers for PHP-project web files and Go (2026-11-05)
+  - `backlog/docs/doc-62 - guide-go-parsers.md`: Go: treesitter parsers templ and proto (2026-11-10)
 
 ## Acceptance Criteria
 

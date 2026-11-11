@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-24'
 labels:
+  - nvim-config
   - config
   - from-config
 dependencies: []

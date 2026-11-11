@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-25'
 labels:
+  - nvim-config
   - lint
   - from-config
 dependencies: []
@@ -18,6 +19,14 @@ Finished work on lint and diagnostics, 2026-10-25 .. 2026-11-07: solved issues a
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-13 - guide-lint-first-wave.md`: nvim-lint first wave (#14e)
+  - `backlog/docs/doc-27 - guide-diag-limit.md`: Diagnostics: first 3 per severity
+  - `backlog/docs/doc-30 - guide-lint-second-wave.md`: nvim-lint second wave (idea 14e)
+  - `backlog/docs/doc-31 - guide-lint-vale-gitleaks.md`: nvim-lint: gitleaks and vale (idea 14e, third wave)
+  - `backlog/docs/doc-38 - guide-checkmake-config.md`: checkmake: no warnings about missing all / clean / test targets
+  - `backlog/docs/doc-57 - guide-lint-go-js-css.md`: golangci-lint, eslint, stylelint (2026-11-05)
 
 ## Acceptance Criteria
 

@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-24'
 labels:
+  - nvim-config
   - f2
   - from-config
 dependencies: []
@@ -18,6 +19,10 @@ Finished work on F2 context menu, 2026-10-24 .. 2026-11-09: solved issues and do
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-28 - guide-f2-item-names.md`: F2 item names: less noise
+  - `backlog/docs/doc-56 - guide-f2-scripts.md`: composer and npm scripts as tasks (2026-11-05)
 
 ## Acceptance Criteria
 

@@ -5,6 +5,7 @@ status: Done
 assignee: []
 created_date: '2026-10-29'
 labels:
+  - nvim-config
   - todo-2026-neovim011
   - new-setup-2026
 dependencies: []
@@ -21,7 +22,7 @@ open a browser and paste a query to perplexity
     - set active provider for runtime session
     - optionally persist choice in plugin-spec setup function (clever / simple lua pattern)
 - the feature / module should be «paste to ai-search in browser», using {{provider}}
-    (doc-wip/readme.2026-10-29.paste-search.md)
+    (backlog/docs/doc-45 - guide-paste-search.md)
 
 From `todo-2026-neovim011.md`, section "new setup 2026".
 

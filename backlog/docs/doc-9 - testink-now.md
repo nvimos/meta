@@ -21,9 +21,9 @@ Passed ones: todo-done/tested-2026-10-29.md, todo-done/tested-2026-10-31.md.
 8. Markdown list wrap
 9. Diagnostics (diag-align, colours)
 10. Telescope key help
-11. netrw.nvim icons (doc-wip/readme.2026-10-31.netrw-nvim.md)
+11. netrw.nvim icons (backlog/docs/doc-50 - guide-netrw-nvim.md)
 12. Lint setup, first run (needs :MasonToolsInstall, :ValeSync)
-13. Ghost text: minuet, llm.nvim (needs ollama serve; doc-wip/readme.2026-10-31.ghost-text-minuet-llm.md)
+13. Ghost text: minuet, llm.nvim (needs ollama serve; backlog/docs/doc-49 - guide-ghost-text-minuet-llm.md)
     - 2026-11-05: llm.nvim already failed, parked in lua/lazyp/unused-failed/llm.lua; minuet <M-y> auto-tested
       (tests/llm). Left: minuet ghost text by hand (model now qwen2.5-coder:0.5b), compare with copilot.
     - result 2026-11-05: ghost text appears, <M-A> takes it, <M-e> drops it. But the provider is Codestral
@@ -95,13 +95,13 @@ Passed ones: todo-done/tested-2026-10-29.md, todo-done/tested-2026-10-31.md.
     2. pastes them without running each line.
   - result 2026-10-31: nvim_paste's bracketed paste ran each line in pwsh. Fixed: pwsh/powershell
     terminals get <C-v> (PSReadLine's paste), others nvim_paste (lua/genja/map-zero.lua). Passes in pwsh and bash.
-- Lint setup (doc-wip/readme.2026-10-24.lint-vale-gitleaks.md, first run)
+- Lint setup (backlog/docs/doc-31 - guide-lint-vale-gitleaks.md, first run)
     1. :MasonToolsInstall
     2. :ValeSync
     3. open the guide's sample files, each shows its linter's warnings.
   - result 2026-10-31: vale (write-good, Microsoft) after :ValeSync, nothing before; gitleaks github-pat on a ghp_ token
     (the guide's AWS sample doesn't match gitleaks' rule; guide fixed). Other linters of the first waves not checked.
-  - same as the open lint items in doc-wip/untested.2026-10-23.md and untested.2026-10-24.md.
+  - same as the open lint items in backlog/docs/doc-69 - untested-2026-10-23.md and untested.2026-10-24.md.
 - Telescope key help (lua/genja/ext/telescope-virthelp.lua)
   - the "footer" prototype was dropped 2026-10-25; its successor shows
       `key | m | description` in the empty results area.
@@ -169,7 +169,7 @@ Passed ones: todo-done/tested-2026-10-29.md, todo-done/tested-2026-10-31.md.
   - `<leader>w` / wsp / wsT window commands: window count and layout
   - g? in oil: help float opens
 
-- From doc-wip/untested.2026-10-23.md, pure-logic items first:
+- From backlog/docs/doc-69 - untested-2026-10-23.md, pure-logic items first:
   - tilde.lua: `~` swaps true/false, +/-, </>
   - md-checklist: visual `<F2>` makes a task list
   - wrapfold: `:WrapFold` puts fold markers with a title

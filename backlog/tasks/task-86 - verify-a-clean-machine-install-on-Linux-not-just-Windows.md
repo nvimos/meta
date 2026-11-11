@@ -5,6 +5,7 @@ status: To Do
 assignee: []
 created_date: '2026-11-08'
 labels:
+  - nvim-config
   - c-users-jazzo
   - cleanup-release-2026
 dependencies: []

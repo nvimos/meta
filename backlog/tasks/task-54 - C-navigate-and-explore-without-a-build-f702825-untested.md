@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-11-10'
 labels:
+  - nvim-config
   - todo-2026-neovim011
   - release-v2026
 dependencies: []
@@ -16,6 +17,9 @@ ordinal: 54000
 14. C: navigate and explore without a build (f702825, untested)
 
 From `todo-2026-neovim011.md`, section "release v2026".
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-53 - guide-c-navigate.md`: C projects without a build (2026-11-05)
 
 ## Verify
 

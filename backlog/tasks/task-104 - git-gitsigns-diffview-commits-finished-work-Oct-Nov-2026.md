@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-25'
 labels:
+  - nvim-config
   - git
   - from-config
 dependencies: []
@@ -18,6 +19,10 @@ Finished work on git, 2026-10-25 .. 2026-11-09: solved issues and done ideas fro
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-29 - guide-gitsigns-skip-ft.md`: gitsigns: off in markdown, `<leader>mGs` toggles per buffer
+  - `backlog/docs/doc-39 - guide-f2-git-staged.md`: F2 in oil: staged files, with their hunks in the preview
 
 ## Acceptance Criteria
 

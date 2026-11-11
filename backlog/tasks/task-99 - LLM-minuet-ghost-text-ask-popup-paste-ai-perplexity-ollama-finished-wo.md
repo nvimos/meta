@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-29'
 labels:
+  - nvim-config
   - llm
   - from-config
 dependencies: []
@@ -19,6 +20,13 @@ Finished work on LLM, 2026-10-29 .. 2026-11-05: solved issues and done ideas fro
 
 Built; the Verify list holds the hand tests the issue files left open.
 
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-10 - guide-ask-popup.md`: Ask popup (#16)
+  - `backlog/docs/doc-25 - guide-ask-floaterm-send.md`: Ask popup: `<M-p>` sends to the claude floaterm (idea 19)
+  - `backlog/docs/doc-45 - guide-paste-search.md`: Paste search: one provider for all lookups
+  - `backlog/docs/doc-49 - guide-ghost-text-minuet-llm.md`: Local ghost text: minuet-ai.nvim and llm.nvim on ollama (2026-10-31)
+  - `backlog/docs/doc-68 - guide-minuet-providers.md`: minuet-ai.nvim providers (2026-10-31)
+
 ## Acceptance Criteria
 
 - [x] #1 perplexity: search moved to a module, right-click on a selection (2026-10-29; `solved-26.10.29-20.56-perplexity-module.md`)
@@ -32,7 +40,7 @@ Built; the Verify list holds the hand tests the issue files left open.
 - [x] #9 minuet: ghost text takes over gitcommit buffers (2026-10-31; `solved-26.10.31-20.02-minuet-gitcommit.md`)
 - [x] #10 paste-ai: right-click search with a picked provider (2026-10-31; `solved-26.10.31-20.02-paste-provider.md`)
 - [x] #11 minuet: ghost text on ollama, README note (2026-11-05; `solved-26.11.05-20.22-minuet-ollama.md`)
-- [x] #12 <m-?>:  popup with ai chat to ask some random question. (done 2026-10-23, untested: doc-wip/readme.2026-10-23.ask-popup.md) (undated; `ideas-16-ask-popup.md`)
+- [x] #12 <m-?>:  popup with ai chat to ask some random question. (done 2026-10-23, untested: backlog/docs/doc-10 - guide-ask-popup.md) (undated; `ideas-16-ask-popup.md`)
 - [x] #13 codecompanion «idea 19a companion» (lua/lazyp/langs-comps/codecompanion.lua) (closed 2026-10-23: spec kept, trial untested) (undated; `ideas-19a-codecompanion.md`)
 - [x] #14 voice input in nvim (closed 2026-10-23: stop at Win+H; whisper.cpp build spec in todo-2027.txt) (undated; `ideas-20-voice-input.md`)
 - [x] #15 copilot.vim: ghost text, keys in the cheatsheet (7d3d537, 53744b7); loads only for gitcommit, <leader>at toggles the other filetypes (e02ab60) (undated; `ideas-27-copilot.md`)

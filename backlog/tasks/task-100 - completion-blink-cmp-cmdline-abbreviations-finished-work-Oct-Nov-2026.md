@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-24'
 labels:
+  - nvim-config
   - completion
   - from-config
 dependencies: []
@@ -18,6 +19,11 @@ Finished work on completion, 2026-10-24 .. 2026-11-06: solved issues and done id
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-21 - guide-tilde-dial.md`: `~` toggles and dial.nvim (idea 29a)
+  - `backlog/docs/doc-26 - guide-comps011-tests.md`: comps011 integration tests: LSP, cmp, linters; groups and slowness
+  - `backlog/docs/doc-44 - guide-blink-manual-test.md`: blink.cmp: manual test guide
 
 ## Acceptance Criteria
 

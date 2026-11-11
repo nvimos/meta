@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-25'
 labels:
+  - nvim-config
   - telescope
   - from-config
 dependencies: []
@@ -18,6 +19,12 @@ Finished work on telescope and genja-finder, 2026-10-25 .. 2026-11-09: solved is
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-17 - guide-refine-exclude.md`: Telescope refine: `<M-x>` exclude (idea 25)
+  - `backlog/docs/doc-20 - guide-telescope-keymaps.md`: Telescope keymaps: refine keys and desc groups (#26b)
+  - `backlog/docs/doc-36 - guide-telescope-explore.md`: Telescope: usability exploration (spec, open questions) + key footer prototype
+  - `backlog/docs/doc-43 - guide-telescope-default-keys.md`: Telescope: default keys to switch off, and named keys in `<C-/>`
 
 ## Acceptance Criteria
 

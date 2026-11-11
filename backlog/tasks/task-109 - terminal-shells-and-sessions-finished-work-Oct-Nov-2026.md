@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-25'
 labels:
+  - nvim-config
   - terminal
   - from-config
 dependencies: []
@@ -18,6 +19,9 @@ Finished work on terminal, shells and sessions, 2026-10-25 .. 2026-10-31: solved
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-41 - guide-session-marker-toggle.md`: Claude session marker: switch it off, and markers in text files
 
 ## Acceptance Criteria
 

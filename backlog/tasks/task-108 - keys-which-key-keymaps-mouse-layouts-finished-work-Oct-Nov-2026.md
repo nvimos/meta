@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-25'
 labels:
+  - nvim-config
   - keys
   - from-config
 dependencies: []
@@ -18,6 +19,15 @@ Finished work on keys, 2026-10-25 .. 2026-11-09: solved issues and done ideas fr
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-15 - guide-mouse-morning.md`: Mouse: right-click per filetype, clickable statusline, :Morning (#30/31)
+  - `backlog/docs/doc-16 - guide-popup-actions.md`: Right-click entry for the `g.` menu (idea 17b)
+  - `backlog/docs/doc-24 - guide-aerial-outline-keys.md`: Outline keys under `<leader>o` (aerial)
+  - `backlog/docs/doc-32 - guide-map-plugin-health.md`: map-plugin: miss log and :checkhealth
+  - `backlog/docs/doc-40 - guide-popup-submit-keys.md`: Commit and ask popups: submit keys that work in Windows Terminal
+  - `backlog/docs/doc-47 - guide-which-groups-test.md`: Test: which-key groups vs mappings
+  - `backlog/docs/doc-48 - guide-which-key-helix.md`: which-key: helix layout
 
 ## Acceptance Criteria
 

@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-25'
 labels:
+  - nvim-config
   - languages
   - from-config
 dependencies: []
@@ -18,6 +19,17 @@ Finished work on languages, 2026-10-25 .. 2026-11-06: solved issues and done ide
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-52 - guide-behat.md`: Behat runner (2026-11-05)
+  - `backlog/docs/doc-53 - guide-c-navigate.md`: C projects without a build (2026-11-05)
+  - `backlog/docs/doc-54 - guide-css-html-lsp.md`: CSS and HTML language servers (2026-11-05)
+  - `backlog/docs/doc-55 - guide-drupal.md`: Drupal projects (2026-11-05)
+  - `backlog/docs/doc-58 - guide-neotest-golang.md`: Go tests through neotest (2026-11-05)
+  - `backlog/docs/doc-59 - guide-parsers-web-go.md`: Treesitter parsers for PHP-project web files and Go (2026-11-05)
+  - `backlog/docs/doc-62 - guide-go-parsers.md`: Go: treesitter parsers templ and proto (2026-11-10)
+  - `backlog/docs/doc-63 - guide-js-tests.md`: JS/TS tests in neotest: vitest or jest (2026-11-10)
+  - `backlog/docs/doc-66 - guide-typescript.md`: TypeScript projects out of the box (2026-11-10)
 
 ## Acceptance Criteria
 

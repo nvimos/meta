@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-11-05'
 labels:
+  - nvim-config
   - todo-ideas
   - ideas-october
   - todo-2026-neovim011
@@ -32,6 +33,14 @@ PHP project out of the box
 
 From `todo-ideas.md`, section "ideas october".
 - v2026 release checklist item 12 (was TASK-52): PHP gaps (auto-todo 2026-11-05 did all but a JS test runner, untested):...
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-52 - guide-behat.md`: Behat runner (2026-11-05)
+  - `backlog/docs/doc-54 - guide-css-html-lsp.md`: CSS and HTML language servers (2026-11-05)
+  - `backlog/docs/doc-55 - guide-drupal.md`: Drupal projects (2026-11-05)
+  - `backlog/docs/doc-56 - guide-f2-scripts.md`: composer and npm scripts as tasks (2026-11-05)
+  - `backlog/docs/doc-57 - guide-lint-go-js-css.md`: golangci-lint, eslint, stylelint (2026-11-05)
+  - `backlog/docs/doc-59 - guide-parsers-web-go.md`: Treesitter parsers for PHP-project web files and Go (2026-11-05)
 
 ## Acceptance Criteria
 

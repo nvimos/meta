@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-24'
 labels:
+  - nvim-config
   - files
   - from-config
 dependencies: []
@@ -18,6 +19,14 @@ Finished work on files, 2026-10-24 .. 2026-11-07: solved issues and done ideas f
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-12 - guide-genja-recent.md`: genja-recent: recent files by frecency (#35)
+  - `backlog/docs/doc-18 - guide-startdirs.md`: Start dirs plugin (idea 36)
+  - `backlog/docs/doc-35 - guide-startdirs-frecency.md`: Start dirs ranked by frecency
+  - `backlog/docs/doc-46 - guide-unsaved-picker.md`: Unsaved buffers picker (2026-10-29)
+  - `backlog/docs/doc-50 - guide-netrw-nvim.md`: netrw.nvim: icons in netrw (2026-10-31)
+  - `backlog/docs/doc-67 - guide-genja-oily.md`: genja-oily.nvim: .oily moved into its own plugin
 
 ## Acceptance Criteria
 
@@ -36,7 +45,7 @@ Built; the Verify list holds the hand tests the issue files left open.
 - [x] #13 oil:    normal gga -> git add (undated; `ideas-07-oil-gga-git-add.md`)
 - [x] #14 <S-F1>: search from oil plugin current dir. (undated; `ideas-08-s-f1-search-oil-dir.md`)
 - [x] #15 oil:    hide a set of predefined folders based on PWD/.oily. (undated; `ideas-15-oil-oily-hide.md`)
-- [x] #16 recent files (done 2026-10-23, untested: doc-wip/readme.2026-10-23.genja-recent.md) (undated; `ideas-35-recent-files.md`)
+- [x] #16 recent files (done 2026-10-23, untested: backlog/docs/doc-12 - guide-genja-recent.md) (undated; `ideas-35-recent-files.md`)
 - [x] #17 add keys in oil to auto-add a location (item) from the list to the startdirs (undated; `ideas-36-startdirs.md`)
 - [x] #18 set up a pre-write handler for this: (undated; `ideas-54-unsaved-picker.md`)
 - [x] #19 consider pros and cons of adding  <https://github.com/prichrd/netrw.nvim> (undated; `ideas-55-netrw-nvim.md`)

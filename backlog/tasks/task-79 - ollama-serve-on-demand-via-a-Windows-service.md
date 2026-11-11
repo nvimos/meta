@@ -5,6 +5,7 @@ status: To Do
 assignee: []
 created_date: '2026-10-31'
 labels:
+  - nvim-config
   - todo-2027
   - git-add-improvement
 dependencies: []

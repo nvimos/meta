@@ -3,5 +3,8 @@ default_status: "To Do"
 # Needs Test: built, waiting to be tried by hand; kept apart from Done so verifying is its own step
 statuses: ["To Do", "In Progress", "Needs Test", "Done", "Dropped"]
 labels: []
+# Not a Backlog.md key: the repos that share this folder, by the project their .nvimos names.
+# A task with one of these labels belongs to that repo; one without any is shared.
+projects: [nvim-config, frontend, backend]
 date_format: yyyy-mm-dd
 auto_commit: false

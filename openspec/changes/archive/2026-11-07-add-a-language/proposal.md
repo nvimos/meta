@@ -14,5 +14,6 @@ last. A checklist makes it one step and shows the gaps per language.
 
 ## Impact
 
+- design and how-to: `design.md` (was the config's doc-wip guide)
 - `readme.add-a-language.md` (7b69862), lang modules in `plug-wip/genja-completion011.nvim/lua/genja/lang/`
 - checked against: PHP (TASK-22), Go (TASK-23), C (TASK-54), TypeScript (TASK-95)

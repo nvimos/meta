@@ -5,6 +5,7 @@ status: Done
 assignee: []
 created_date: '2026-11-10'
 labels:
+  - nvim-config
   - todo-2026-neovim011
   - new-setup-2026
 dependencies: []

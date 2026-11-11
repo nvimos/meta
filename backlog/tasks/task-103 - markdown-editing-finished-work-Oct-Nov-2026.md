@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-24'
 labels:
+  - nvim-config
   - markdown
   - from-config
 dependencies: []
@@ -18,6 +19,12 @@ Finished work on markdown editing, 2026-10-24 .. 2026-11-03: solved issues and d
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-14 - guide-md-checklist.md`: F2 markdown: lines to checklist (idea 34)
+  - `backlog/docs/doc-33 - guide-md-fix.md`: Markdown: fixers, fix on save, abbreviations
+  - `backlog/docs/doc-64 - guide-md-fix-indicator.md`: md-fix busy mark in the statusline (2026-11-10)
+  - `backlog/docs/doc-65 - guide-md-links.md`: Markdown: bare URLs to inline links (2026-11-10)
 
 ## Acceptance Criteria
 
@@ -49,5 +56,5 @@ Hands-on checks, kept apart from the build steps.
 - [ ] test: gq on a long `- [ ] item` line indents after the checkbox (`solved-26.10.29-20.56-md-formatlistpat.md`)
 - [ ] markdownlint MD007 (indent 2) may re-indent lists to a width that doesn't fit tab size 4 (`solved-26.10.31-20.02-md-editorconfig.md`)
 - [ ] test: `3]j` in a todo file (`solved-26.11.03-14.02-md-box-jump.md`)
-- [ ] test: guide doc-wip/readme.2026-11-10.md-links.md (`ideas-61-md-links.md`)
-- [ ] test: guide doc-wip/readme.2026-11-10.md-fix-indicator.md (`ideas-62-md-fix-indicator.md`)
+- [ ] test: guide backlog/docs/doc-65 - guide-md-links.md (`ideas-61-md-links.md`)
+- [ ] test: guide backlog/docs/doc-64 - guide-md-fix-indicator.md (`ideas-62-md-fix-indicator.md`)

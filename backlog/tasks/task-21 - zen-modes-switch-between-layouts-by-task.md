@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-11-05'
 labels:
+  - nvim-config
   - todo-ideas
   - ideas-october
   - todo-2026-neovim011
@@ -35,6 +36,9 @@ Change: `openspec/changes/zen-layouts-by-task/`
 
 From `todo-ideas.md`, section "ideas october".
 - v2026 release checklist item 10 (was TASK-50): zen layouts by task (z1 code only, a digging/debug layout)
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-37 - guide-zen-toggles.md`: Zen toggles: switching, size memory, diagnostics limit
 
 ## Acceptance Criteria
 

@@ -5,6 +5,7 @@ status: To Do
 assignee: []
 created_date: '2026-11-10'
 labels:
+  - nvim-config
   - performance
 dependencies: []
 ordinal: 96000

@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-11-05'
 labels:
+  - nvim-config
   - todo-ideas
   - ideas-october
   - todo-2026-neovim011

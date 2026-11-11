@@ -96,3 +96,6 @@ TASK-115	To Do		mini.git: E5108 nil index in git_cli_output while browsing :cmdl
 TASK-116	To Do	bootstrap-and-ci	bootstrap: install every dependency with one script	legacy/nvim-config
 TASK-117	To Do		CI: GitHub Actions run the tests	nvimos-meta
 TASK-118	To Do		integrate vim-toggle-ui-elements2	legacy/nvim-config
+TASK-119	Needs Test		frontend: connect once, Retry, Start Neovim	nvimos-meta
+TASK-120	Needs Test		frontend: Help mode lists the keys in columns	nvimos-meta
+TASK-121	Needs Test		frontend: tasks from the .nvimos planning folder, filtered by project	nvimos-meta

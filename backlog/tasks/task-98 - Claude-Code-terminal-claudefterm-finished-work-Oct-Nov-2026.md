@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-24'
 labels:
+  - nvim-config
   - claude-terminal
   - from-config
 dependencies: []
@@ -18,6 +19,9 @@ Finished work on Claude Code terminal (claudefterm), 2026-10-24 .. 2026-11-07: s
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-11 - guide-claude-per-project.md`: Claude floaterm per project (#19)
 
 ## Acceptance Criteria
 

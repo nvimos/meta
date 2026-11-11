@@ -5,6 +5,7 @@ status: To Do
 assignee: []
 created_date: '2026-11-05'
 labels:
+  - nvim-config
   - todo-2027
   - new-setup-2027
 dependencies: []
@@ -21,6 +22,10 @@ minuet ghost text on a cheap, good prepaid model
 - keys from the gitignored lua/genja/local/secrets.lua, like the other providers
 
 From `todo-2027.md`, section "new setup 2027".
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-49 - guide-ghost-text-minuet-llm.md`: Local ghost text: minuet-ai.nvim and llm.nvim on ollama (2026-10-31)
+  - `backlog/docs/doc-68 - guide-minuet-providers.md`: minuet-ai.nvim providers (2026-10-31)
 
 ## Original notes
 

@@ -5,6 +5,7 @@ status: Done
 assignee: []
 created_date: '2026-11-10'
 labels:
+  - nvim-config
   - todo-2026-neovim011
   - new-setup-2026
 dependencies: []
@@ -25,6 +26,9 @@ Change: `openspec/changes/archive/2026-10-27-blink-completion/`
         but works faster and it's more powerful
 
 From `todo-2026-neovim011.md`, section "new setup 2026".
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-44 - guide-blink-manual-test.md`: blink.cmp: manual test guide
 
 ## Acceptance Criteria
 

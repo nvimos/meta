@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-26'
 labels:
+  - nvim-config
   - tests
   - from-config
 dependencies: []
@@ -18,6 +19,9 @@ Finished work on tests and test rounds, 2026-10-26 .. 2026-11-07: solved issues 
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-42 - guide-slow-cutoff.md`: Tests that leave slow cases out of the next run on their own
 
 ## Acceptance Criteria
 

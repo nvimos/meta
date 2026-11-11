@@ -16,5 +16,6 @@ built-in LSP completion; both were worth comparing before porting the config's s
 
 ## Impact
 
+- design and how-to: `design.md` (was the config's doc-wip guide)
 - `plug-wip/genja-completion011.nvim` (notes: README, "Alternatives to nvim-cmp"); tests/completion
 - commits 2d6b4bd, 00268c4, 191c6cf, 55c1296; follow-ups in TASK-100

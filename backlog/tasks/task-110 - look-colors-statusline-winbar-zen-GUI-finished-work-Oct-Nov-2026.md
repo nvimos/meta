@@ -5,6 +5,7 @@ status: Needs Test
 assignee: []
 created_date: '2026-10-24'
 labels:
+  - nvim-config
   - look
   - from-config
 dependencies: []
@@ -18,6 +19,15 @@ Finished work on look, 2026-10-24 .. 2026-11-08: solved issues and done ideas fr
 `legacy/nvim-config/`.
 
 Built; the Verify list holds the hand tests the issue files left open.
+
+- Guides (how it works, how to try it):
+  - `backlog/docs/doc-19 - guide-tabline-click.md`: Tabline: resizing nvim-qt walked to the last tab (idea 32)
+  - `backlog/docs/doc-22 - guide-winsize.md`: Window sizes (idea 28)
+  - `backlog/docs/doc-23 - guide-wrapfold.md`: Fold markers with a title (idea 29b)
+  - `backlog/docs/doc-34 - guide-messages.md`: :Messages and F2: jump from errors in :messages to file:line
+  - `backlog/docs/doc-37 - guide-zen-toggles.md`: Zen toggles: switching, size memory, diagnostics limit
+  - `backlog/docs/doc-51 - guide-aerial-follow.md`: aerial sidebar follows the file (2026-11-05)
+  - `backlog/docs/doc-61 - guide-colorcolumn.md`: colorcolumn on/off (2026-11-10)
 
 ## Acceptance Criteria
 
