@@ -1,18 +1,19 @@
 # meta
 
 Planning for [On-Screen Nvim](https://github.com/nvimos/onscreen): ideas, todos and their state, kept out of
-the config repo. The same backlog is here twice, in two task formats, to compare them and keep one
-(or both):
+the config repo. Two formats, each for what it does best:
 
-- `backlog/`: [Backlog.md](https://github.com/MrLesk/Backlog.md), one Markdown file per task with a YAML
-  header (status, labels, date). Open tasks in `backlog/tasks/`, finished and dropped ones in
-  `backlog/archive/tasks/`, longer notes in `backlog/docs/`. Works with the `backlog` CLI and board
-  (`npm i -g backlog.md`, then `backlog board`), or as plain files.
-- `openspec/`: [OpenSpec](https://github.com/Fission-AI/OpenSpec), one folder per change with
-  `proposal.md` (why, what changes, impact) and `tasks.md`. Open changes in `openspec/changes/`, finished
-  ones in `openspec/changes/archive/<date>-<id>/`. Works with the `openspec` CLI (`openspec list`).
+- `backlog/`: [Backlog.md](https://github.com/MrLesk/Backlog.md), every item: one Markdown file per task
+  with a YAML header (status, labels, date). Open tasks in `backlog/tasks/`, finished and dropped ones in
+  `backlog/archive/tasks/`, longer notes and test sessions in `backlog/docs/`. Works with the `backlog` CLI
+  and board (`npm i -g backlog.md`, then `backlog board`), or as plain files.
+- `openspec/`: [OpenSpec](https://github.com/Fission-AI/OpenSpec), only for work that needs a design: a
+  folder per change with `proposal.md` (why, what changes, impact), `tasks.md` and spec deltas. Open changes
+  in `openspec/changes/`, finished ones in `openspec/changes/archive/<date>-<id>/`, their specs merged into
+  `openspec/specs/<capability>/spec.md`. Works with the `openspec` CLI (`openspec list`).
 
-Each OpenSpec change names its Backlog.md task (`TASK-<n>`); `index.tsv` lists both side by side.
+A change names its task (`Status: X (backlog TASK-<n>)`) and the task names its change (`Change:`);
+`index.tsv` lists every task with its change, if any. Nothing is copied into both formats.
 
 ## Build and verify are separate
 
@@ -44,6 +45,8 @@ Without make: `python tools/scan.py 'Needs Test' --details`.
 ## Where it came from
 
 Converted on 2026-11-10 from the config's `todo-ideas.md`, `todo-2026-neovim011.md`, `todo-2027.md`,
-`todo-2028.md` and `todo-ideas/` by `tools/convert-from-nvim.py`. Every task keeps its original text
-under "Original notes". The original files are in `legacy/`, as they were, with the squash files
-(rankings and estimates of the auto-todo runs).
+`todo-2028.md` and `todo-ideas/` by `tools/convert-from-nvim.py`; those files are in `legacy/`, with the
+squash files (rankings and estimates of the auto-todo runs). On 2026-11-11 the rest followed: the
+config's `todo-2026.md`, `todo-done/`, `todo-issue/` and `todo-test/` are in `legacy/nvim-config/`, the
+solved issues grouped by area into tasks (TASK-98..113), the test notes in `backlog/docs/`, and the
+duplicate tasks merged (`openspec/changes/archive/2026-11-11-planning-in-meta/`).

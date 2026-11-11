@@ -7,6 +7,8 @@ created_date: '2026-11-05'
 labels:
   - todo-ideas
   - ideas-october
+  - todo-2026-neovim011
+  - release-v2026
 dependencies: []
 ordinal: 21000
 ---
@@ -15,11 +17,13 @@ ordinal: 21000
 
 zen modes: switch between layouts by task
 
+Change: `openspec/changes/zen-layouts-by-task/`
+
 - z1: only the code
 - z2 (or a new key): digging, debugging, jumping around code: sidebars (aerial), dropbar and the like shown
 - today: lua/genja/map-plugin/zenmode.lua, z1 width 120, z2 width 80 + relnum + maximized, z0 off; both hide diagnostics
 - open: keep z1/z2 as they are and add z3 for the debug layout, or redefine z2?
-- decided 2026-11-05 (todo-test/php-debug.md): z1 reading and prose (usable for anything);
+- decided 2026-11-05 (`backlog/docs/doc-8 - php-debug.md`): z1 reading and prose (usable for anything);
   z2 some UI: limited diagnostics, max-width line; z3 UI heavy, debug panes as splits in the z3 view
   (not a separate tab; outside z3 the debug tab default stays).
 - open questions 2026-11-05 (parked by user): zen-mode's float hides other windows, so z3 can't
@@ -30,6 +34,7 @@ zen modes: switch between layouts by task
   4. z2 today turns diagnostics off; change to diagnostics on with the limit?
 
 From `todo-ideas.md`, section "ideas october".
+- v2026 release checklist item 10 (was TASK-50): zen layouts by task (z1 code only, a digging/debug layout)
 
 ## Acceptance Criteria
 

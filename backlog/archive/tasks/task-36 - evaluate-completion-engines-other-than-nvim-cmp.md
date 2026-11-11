@@ -15,6 +15,8 @@ ordinal: 36000
 
 evaluate completion engines other than nvim-cmp
 
+Change: `openspec/changes/archive/2026-10-27-blink-completion/`
+
 (notes: plug-wip/genja-completion011.nvim/README.md, "Alternatives to nvim-cmp")
     - is LSP-only enough? what about buffer words, paths, cmdline?
     - no it's not enough, maybe for some kind of minimalist setup

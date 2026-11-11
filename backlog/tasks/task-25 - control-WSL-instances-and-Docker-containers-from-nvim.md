@@ -7,6 +7,8 @@ created_date: '2026-11-05'
 labels:
   - todo-ideas
   - ideas-october
+  - todo-2026-neovim011
+  - release-v2026
 dependencies: []
 ordinal: 25000
 ---
@@ -20,6 +22,7 @@ control WSL instances and Docker containers from nvim
   picker for docker ps/images/compose (logs, exec shell, restart); check existing plugins first
 
 From `todo-ideas.md`, section "ideas october".
+- v2026 release checklist item 16 (was TASK-56): WSL and Docker control from nvim
 
 ## Branch
 

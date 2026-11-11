@@ -7,6 +7,8 @@ created_date: '2026-11-05'
 labels:
   - todo-ideas
   - ideas-october
+  - todo-2026-neovim011
+  - release-v2026
 dependencies: []
 ordinal: 23000
 ---
@@ -23,6 +25,7 @@ Go project out of the box, same feel as PHP
       sql on PR-langs, dockerfile on PR-wsl-docker; untested
 
 From `todo-ideas.md`, section "ideas october".
+- v2026 release checklist item 13 (was TASK-53): Go gaps: golangci-lint, gomod/gotmpl parsers, one test runner
 
 ## Acceptance Criteria
 

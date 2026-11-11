@@ -15,6 +15,8 @@ ordinal: 94000
 
 todo files out of the config repo into nvimos/meta
 
+Change: `openspec/changes/archive/2026-11-11-planning-in-meta/`
+
 From `legacy/todo-cleanup-release-2026.md`, section "cleanup release 2026".
 
 ## Acceptance Criteria

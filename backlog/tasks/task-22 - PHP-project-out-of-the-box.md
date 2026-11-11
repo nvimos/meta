@@ -7,6 +7,8 @@ created_date: '2026-11-05'
 labels:
   - todo-ideas
   - ideas-october
+  - todo-2026-neovim011
+  - release-v2026
 dependencies: []
 ordinal: 22000
 ---
@@ -29,6 +31,7 @@ PHP project out of the box
       `<F2>` composer/npm scripts (bac05c1); Behat overseer template via ddev in WSL (23d563c)
 
 From `todo-ideas.md`, section "ideas october".
+- v2026 release checklist item 12 (was TASK-52): PHP gaps (auto-todo 2026-11-05 did all but a JS test runner, untested):...
 
 ## Acceptance Criteria
 

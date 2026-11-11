@@ -31,6 +31,7 @@ From `todo-2027.md`, section "git add improvement".
 - [ ] #7 checking every cmd.exe/PowerShell task and shell wrapper;
 - [ ] #8 adapting Windows-only Markdown preview behavior, especially the “open a new PowerShell window” workflow;
 - [ ] #9 verifying terminal, path, clipboard, and executable detection behavior.
+- [ ] #10 test on a real Lumix
 
 ## Original notes
 
