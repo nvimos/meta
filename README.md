@@ -13,7 +13,7 @@ the config repo. Two formats, each for what it does best:
   `openspec/specs/<capability>/spec.md`. Works with the `openspec` CLI (`openspec list`).
 
 A change names its task (`Status: X (backlog TASK-<n>)`) and the task names its change (`Change:`);
-`index.tsv` lists every task with its change, if any. Nothing is copied into both formats.
+`index.tsv` lists every task with its change, if any; it is generated (`tools/convert-from-nvim.py`) and not tracked. Nothing is copied into both formats.
 
 ## Build and verify are separate
 
