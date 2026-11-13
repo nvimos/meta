@@ -1,6 +1,6 @@
 ---
 id: TASK-115
-title: 'mini.git: E5108 nil index in git_cli_output while browsing :cmdline history'
+title: 'fix mini.git nil index on cmdline history'
 status: To Do
 assignee: []
 created_date: '2026-11-11'

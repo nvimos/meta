@@ -1,6 +1,6 @@
 ---
 id: TASK-88
-title: 'collapse the `lua/lazyp/unused-*` folders'
+title: 'collapse lazyp unused folders'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

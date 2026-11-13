@@ -1,6 +1,6 @@
 ---
 id: TASK-62
-title: 'oil: self-heal stale entry ids after `:Lazy reload oil.nvim`'
+title: 'oil stale ids self-heal'
 status: To Do
 assignee: []
 created_date: '2026-11-07'

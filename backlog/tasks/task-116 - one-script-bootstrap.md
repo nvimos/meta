@@ -1,6 +1,6 @@
 ---
 id: TASK-116
-title: 'bootstrap: install every dependency with one script'
+title: 'one-script bootstrap'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

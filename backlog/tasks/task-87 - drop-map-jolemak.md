@@ -1,6 +1,6 @@
 ---
 id: TASK-87
-title: 'delete or fill the zero-byte `lua/genja/map-jolemak.lua` stub'
+title: 'drop map-jolemak'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

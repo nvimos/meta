@@ -1,6 +1,6 @@
 ---
 id: TASK-121
-title: 'frontend: tasks from the .nvimos planning folder, filtered by project'
+title: 'frontend tasks by project'
 status: Needs Test
 assignee: []
 created_date: '2026-11-11'

@@ -1,6 +1,6 @@
 ---
 id: TASK-117
-title: 'CI: GitHub Actions run the tests'
+title: 'run tests in github actions ci'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

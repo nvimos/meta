@@ -1,6 +1,6 @@
 ---
 id: TASK-104
-title: 'git: gitsigns, diffview, commits: finished work, Oct-Nov 2026'
+title: 'gitsigns, diffview and commits'
 status: Needs Test
 assignee: []
 created_date: '2026-10-25'

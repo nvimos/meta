@@ -1,6 +1,6 @@
 ---
 id: TASK-112
-title: 'docs, todo files and skills: finished work, Oct-Nov 2026'
+title: 'docs, todo files and skills'
 status: Needs Test
 assignee: []
 created_date: '2026-10-24'

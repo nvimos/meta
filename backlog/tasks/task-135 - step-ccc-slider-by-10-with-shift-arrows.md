@@ -1,6 +1,6 @@
 ---
 id: TASK-135
-title: 'ccc: Shift-Left and Shift-Right move the slider by 10'
+title: 'step ccc slider by 10 with shift-arrows'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

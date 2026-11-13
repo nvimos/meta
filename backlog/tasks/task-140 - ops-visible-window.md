@@ -1,6 +1,6 @@
 ---
 id: TASK-140
-title: 'ops: :Ops starts the app with a visible window'
+title: 'ops visible window'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

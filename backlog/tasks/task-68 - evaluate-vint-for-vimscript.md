@@ -1,6 +1,6 @@
 ---
 id: TASK-68
-title: 'vint: revisit for heavy vimscript editing'
+title: 'evaluate vint for vimscript'
 status: To Do
 assignee: []
 created_date: '2026-10-31'

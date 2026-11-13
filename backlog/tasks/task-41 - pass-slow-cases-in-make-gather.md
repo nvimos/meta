@@ -1,6 +1,6 @@
 ---
 id: TASK-41
-title: '`make gather` in tests/ passes, slow cases too'
+title: 'pass slow cases in make gather'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

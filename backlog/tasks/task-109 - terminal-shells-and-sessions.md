@@ -1,6 +1,6 @@
 ---
 id: TASK-109
-title: 'terminal, shells and sessions: finished work, Oct-Nov 2026'
+title: 'terminal, shells and sessions'
 status: Needs Test
 assignee: []
 created_date: '2026-10-25'

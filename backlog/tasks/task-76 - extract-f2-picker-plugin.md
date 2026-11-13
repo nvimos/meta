@@ -1,6 +1,6 @@
 ---
 id: TASK-76
-title: 'extract the F2 context picker into its own plugin, e.g. plug-wip/genja-eff-two.nvim'
+title: 'extract f2 picker plugin'
 status: To Do
 assignee: []
 created_date: '2026-11-09'

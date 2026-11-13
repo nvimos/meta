@@ -1,6 +1,6 @@
 ---
 id: TASK-66
-title: 'consider plugin'
+title: 'consider telescope live-grep-args'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

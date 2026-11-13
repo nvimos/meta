@@ -1,6 +1,6 @@
 ---
 id: TASK-54
-title: 'C: navigate and explore without a build (f702825, untested)'
+title: 'try c navigation without a build'
 status: Needs Test
 assignee: []
 created_date: '2026-11-10'

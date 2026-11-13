@@ -1,6 +1,6 @@
 ---
 id: TASK-43
-title: 'hand tests: backlog/docs/doc-9 - testink-now.md and the untested items in todo-ideas.md (all,...'
+title: 'run hand tests from testink'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

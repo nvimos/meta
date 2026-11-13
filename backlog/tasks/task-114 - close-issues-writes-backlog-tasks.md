@@ -1,6 +1,6 @@
 ---
 id: TASK-114
-title: 'skills: /close-issues follow-ups'
+title: 'close-issues writes backlog tasks'
 status: Needs Test
 assignee: []
 created_date: '2026-10-24'

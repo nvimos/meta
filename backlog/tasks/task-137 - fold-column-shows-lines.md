@@ -1,6 +1,6 @@
 ---
 id: TASK-137
-title: 'folds: fold column shows lines, no digits or triangles'
+title: 'fold column shows lines'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'
@@ -27,8 +27,8 @@ Commits: config 588bd08.
 
 ## Verify
 
-- [ ] test: markdown file with H1 to H6 nested: the fold column grows and shows `│` at every depth, no digits
-- [ ] test: open and closed folds both show `│`, no ▼ or ▶
+- [x] test: markdown file with H1 to H6 nested: the fold column grows and shows `│` at every depth, no digits
+- [x] test: open and closed folds both show `│`, no ▼ or ▶
 - [ ] test: a code file with folds deeper than 3 (indent or syntax) can still show digits: fixed width 3
 
 ## Notes

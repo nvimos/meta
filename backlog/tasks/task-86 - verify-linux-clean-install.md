@@ -1,6 +1,6 @@
 ---
 id: TASK-86
-title: 'verify a clean-machine install on Linux, not just Windows'
+title: 'verify linux clean install'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

@@ -1,6 +1,6 @@
 ---
 id: TASK-29
-title: 'try the new diff viewers and their modes'
+title: 'try new diff viewers'
 status: To Do
 assignee: []
 created_date: '2026-11-09'

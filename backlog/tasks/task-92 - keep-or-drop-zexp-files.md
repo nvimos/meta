@@ -1,6 +1,6 @@
 ---
 id: TASK-92
-title: 'experimental `zexp-*` files: keep, move or delete'
+title: 'keep or drop zexp files'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

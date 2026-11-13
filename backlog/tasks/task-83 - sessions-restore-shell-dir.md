@@ -1,6 +1,6 @@
 ---
 id: TASK-83
-title: 'sessions: a saved shell comes back in its current dir, not the one it was started in...'
+title: 'sessions restore shell dir'
 status: To Do
 assignee: []
 created_date: '2026-11-02'

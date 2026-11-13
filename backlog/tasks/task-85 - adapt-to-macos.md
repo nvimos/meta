@@ -1,6 +1,6 @@
 ---
 id: TASK-85
-title: 'macOS adaptation'
+title: 'adapt to macos'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

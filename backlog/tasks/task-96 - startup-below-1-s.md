@@ -1,6 +1,6 @@
 ---
 id: TASK-96
-title: 'startup back below 1 s'
+title: 'startup below 1 s'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

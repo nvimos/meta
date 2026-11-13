@@ -1,6 +1,6 @@
 ---
 id: TASK-77
-title: 'f2 git config (new f2 action)'
+title: 'f2 git config action'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

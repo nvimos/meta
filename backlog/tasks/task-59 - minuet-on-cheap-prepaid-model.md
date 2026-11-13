@@ -1,6 +1,6 @@
 ---
 id: TASK-59
-title: 'minuet ghost text on a cheap, good prepaid model'
+title: 'minuet on cheap prepaid model'
 status: To Do
 assignee: []
 created_date: '2026-11-05'

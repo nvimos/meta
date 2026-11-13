@@ -1,6 +1,6 @@
 ---
 id: TASK-78
-title: 'improve: f2 git add'
+title: 'improve f2 git add'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

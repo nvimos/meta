@@ -1,6 +1,6 @@
 ---
 id: TASK-134
-title: 'reload: :ReloadLuaGenja also sources the ftplugin files again'
+title: 'make :ReloadLuaGenja source ftplugins'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

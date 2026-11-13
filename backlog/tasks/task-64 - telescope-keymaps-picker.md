@@ -1,6 +1,6 @@
 ---
 id: TASK-64
-title: 'custom telescope keymaps picker (telescope-keys), modelled on abdul-keymaps'
+title: 'telescope keymaps picker'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

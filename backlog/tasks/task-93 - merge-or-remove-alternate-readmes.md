@@ -1,6 +1,6 @@
 ---
 id: TASK-93
-title: 'alternate readmes and `do.not.readme.md`: merge or remove'
+title: 'merge or remove alternate readmes'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

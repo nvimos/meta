@@ -1,6 +1,6 @@
 ---
 id: TASK-81
-title: 'verify ecolog v1 (without rust)'
+title: 'verify ecolog v1'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

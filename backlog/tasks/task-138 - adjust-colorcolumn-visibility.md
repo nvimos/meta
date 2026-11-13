@@ -1,6 +1,6 @@
 ---
 id: TASK-138
-title: 'colors: colorcolumn stripe is the background plus a little gray'
+title: 'adjust colorcolumn visibility'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

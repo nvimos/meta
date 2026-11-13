@@ -1,6 +1,6 @@
 ---
 id: TASK-25
-title: 'control WSL instances and Docker containers from nvim'
+title: 'control wsl and docker from nvim'
 status: Needs Test
 assignee: []
 created_date: '2026-11-05'

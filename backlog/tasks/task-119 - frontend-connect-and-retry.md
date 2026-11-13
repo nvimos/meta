@@ -1,6 +1,6 @@
 ---
 id: TASK-119
-title: 'frontend: connect once, Retry, Start Neovim'
+title: 'frontend connect and retry'
 status: Needs Test
 assignee: []
 created_date: '2026-11-11'

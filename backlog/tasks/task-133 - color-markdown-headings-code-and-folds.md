@@ -1,6 +1,6 @@
 ---
 id: TASK-133
-title: 'colors: markdown headings, code and comments, fold and diagnostic float'
+title: 'color markdown headings, code and folds'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

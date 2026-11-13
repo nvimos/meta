@@ -1,6 +1,6 @@
 ---
 id: TASK-105
-title: 'files: oil, netrw, start dirs, recent files: finished work, Oct-Nov 2026'
+title: 'oil, netrw, start dirs and recent files'
 status: Needs Test
 assignee: []
 created_date: '2026-10-24'

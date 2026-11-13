@@ -1,6 +1,6 @@
 ---
 id: TASK-73
-title: 'almavimrc'
+title: 'alma vimrc to lua'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

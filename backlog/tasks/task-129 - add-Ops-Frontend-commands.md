@@ -1,6 +1,6 @@
 ---
 id: TASK-129
-title: 'ops: :Ops / :Frontend start the front end app'
+title: 'add :Ops / :Frontend commands'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

@@ -1,6 +1,6 @@
 ---
 id: TASK-63
-title: 'keymaps tracker: keep counts in memory, write them once on exit'
+title: 'keymaps tracker writes on exit'
 status: To Do
 assignee: []
 created_date: '2026-11-07'

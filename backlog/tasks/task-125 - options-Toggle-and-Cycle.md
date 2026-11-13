@@ -1,6 +1,6 @@
 ---
 id: TASK-125
-title: 'options: :Toggle and :Cycle'
+title: 'options toggle and cycle'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

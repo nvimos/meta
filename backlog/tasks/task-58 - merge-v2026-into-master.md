@@ -1,6 +1,6 @@
 ---
 id: TASK-58
-title: 'release: merge v2026 into master when the checklist is done (2026-11-05:...'
+title: 'merge v2026 into master'
 status: To Do
 assignee: []
 created_date: '2026-11-05'

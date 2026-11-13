@@ -1,6 +1,6 @@
 ---
 id: TASK-27
-title: 'LLM chat in a buffer, like the browser chat'
+title: 'llm chat in a buffer'
 status: To Do
 assignee: []
 created_date: '2026-11-05'

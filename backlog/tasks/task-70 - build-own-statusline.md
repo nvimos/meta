@@ -1,6 +1,6 @@
 ---
 id: TASK-70
-title: 'bootstrap my own statusline'
+title: 'build own statusline'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

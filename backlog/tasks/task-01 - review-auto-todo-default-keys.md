@@ -1,6 +1,6 @@
 ---
 id: TASK-1
-title: 'review the keys added on default answers in auto-todo 2026-11-10 (not thought through,...'
+title: 'review auto-todo default keys'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

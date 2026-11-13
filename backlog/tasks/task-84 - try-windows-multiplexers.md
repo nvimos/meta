@@ -1,6 +1,6 @@
 ---
 id: TASK-84
-title: 'try the Windows multiplexers, before the light-weight session idea above'
+title: 'try windows multiplexers'
 status: To Do
 assignee: []
 created_date: '2026-11-02'

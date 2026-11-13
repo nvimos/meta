@@ -1,6 +1,6 @@
 ---
 id: TASK-21
-title: 'zen modes: switch between layouts by task'
+title: 'zen layouts by task'
 status: Needs Test
 assignee: []
 created_date: '2026-11-05'
@@ -35,6 +35,7 @@ Change: `openspec/changes/zen-layouts-by-task/`
   4. z2 today turns diagnostics off; change to diagnostics on with the limit?
 
 From `todo-ideas.md`, section "ideas october".
+
 - v2026 release checklist item 10 (was TASK-50): zen layouts by task (z1 code only, a digging/debug layout)
 
 - Guides (how it works, how to try it):

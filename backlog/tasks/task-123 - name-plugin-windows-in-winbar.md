@@ -1,6 +1,6 @@
 ---
 id: TASK-123
-title: 'winbar: names for plugin windows'
+title: 'name plugin windows in winbar'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

@@ -1,6 +1,6 @@
 ---
 id: TASK-95
-title: 'TypeScript projects out of the box'
+title: 'typescript full support'
 status: Needs Test
 assignee: []
 created_date: '2026-11-10'

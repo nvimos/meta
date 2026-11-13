@@ -1,6 +1,6 @@
 ---
 id: TASK-139
-title: 'write: repair the Windows Hidden attribute before a write'
+title: 'repair hidden attribute on write'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

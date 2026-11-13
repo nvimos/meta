@@ -1,6 +1,6 @@
 ---
 id: TASK-99
-title: 'LLM: minuet ghost text, ask popup, paste-ai, perplexity, ollama: finished work, Oct-Nov 2026'
+title: 'llm ghost text, ask popup, paste-ai, ollama'
 status: Needs Test
 assignee: []
 created_date: '2026-10-29'

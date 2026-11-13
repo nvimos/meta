@@ -1,6 +1,6 @@
 ---
 id: TASK-18
-title: 'lint: :ValeSync runs by itself when the shared styles are missing'
+title: 'auto vale styles sync'
 status: Needs Test
 assignee: []
 created_date: '2026-10-31'

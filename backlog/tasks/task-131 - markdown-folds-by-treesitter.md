@@ -1,6 +1,6 @@
 ---
 id: TASK-131
-title: 'markdown: folds by treesitter, fold text without count, conceal 2'
+title: 'markdown folds by treesitter'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

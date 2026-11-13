@@ -1,6 +1,6 @@
 ---
 id: TASK-132
-title: 'folds: z1/z2 change the fold level, foldnestmax 5'
+title: 'folds z1 z2 levels'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

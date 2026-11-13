@@ -1,6 +1,6 @@
 ---
 id: TASK-102
-title: 'languages: LSP, mason, treesitter, debugging: finished work, Oct-Nov 2026'
+title: 'lsp, mason, treesitter and debugging'
 status: Needs Test
 assignee: []
 created_date: '2026-10-25'

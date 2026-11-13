@@ -1,6 +1,6 @@
 ---
 id: TASK-101
-title: 'lint and diagnostics: finished work, Oct-Nov 2026'
+title: 'lint and diagnostics setup'
 status: Needs Test
 assignee: []
 created_date: '2026-10-25'

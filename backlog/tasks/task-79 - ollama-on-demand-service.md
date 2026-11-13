@@ -1,6 +1,6 @@
 ---
 id: TASK-79
-title: 'ollama serve on demand, via a Windows service'
+title: 'ollama on demand service'
 status: To Do
 assignee: []
 created_date: '2026-10-31'

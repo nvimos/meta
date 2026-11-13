@@ -1,6 +1,6 @@
 ---
 id: TASK-82
-title: 'Lumix adaptation'
+title: 'adapt to lumix'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

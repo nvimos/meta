@@ -1,6 +1,6 @@
 ---
 id: TASK-120
-title: 'frontend: Help mode lists the keys in columns'
+title: 'frontend help in columns'
 status: Needs Test
 assignee: []
 created_date: '2026-11-11'

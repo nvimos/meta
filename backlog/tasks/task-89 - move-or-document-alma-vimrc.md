@@ -1,6 +1,6 @@
 ---
 id: TASK-89
-title: 'move or document `lua/genja/vimrc.almalinux.vim`'
+title: 'move or document alma vimrc'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

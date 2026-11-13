@@ -1,6 +1,6 @@
 ---
 id: TASK-128
-title: 'terminal: insert mode leaks into a new oil tab'
+title: 'terminal mode leaks into oil'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

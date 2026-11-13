@@ -1,6 +1,6 @@
 ---
 id: TASK-23
-title: 'Go project out of the box, same feel as PHP'
+title: 'golang full support'
 status: Needs Test
 assignee: []
 created_date: '2026-11-05'

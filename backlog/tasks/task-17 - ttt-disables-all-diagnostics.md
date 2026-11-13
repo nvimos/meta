@@ -1,7 +1,7 @@
 ---
 id: TASK-17
-title: 'diagnostics: `<leader>ttt` disables all diagnostics (LSP, nvim-lint: vale, gitleaks,...'
-status: Needs Test
+title: 'ttt disables all diagnostics'
+status: Done
 assignee: []
 created_date: '2026-11-02'
 labels:

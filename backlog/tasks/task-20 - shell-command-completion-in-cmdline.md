@@ -1,6 +1,6 @@
 ---
 id: TASK-20
-title: 'completion: blink cmdline completion of shell commands (`!cmd`, `:terminal cmd`) is...'
+title: 'shell command completion in cmdline'
 status: Needs Test
 assignee: []
 created_date: '2026-11-02'
@@ -28,7 +28,7 @@ From `todo-ideas.md`, section "ideas october".
 
 Hands-on checks, kept apart from the build steps.
 
-- [ ] try it by hand (marked untested in the notes)
+- [x] try it by hand (marked untested in the notes)
 
 ## Original notes
 

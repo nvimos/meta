@@ -1,6 +1,6 @@
 ---
 id: TASK-111
-title: 'tests and test rounds: finished work, Oct-Nov 2026'
+title: 'tests and test rounds'
 status: Needs Test
 assignee: []
 created_date: '2026-10-26'

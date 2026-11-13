@@ -1,6 +1,6 @@
 ---
 id: TASK-28
-title: 'PHP debugging that works, part of v2026'
+title: 'php debugging'
 status: Needs Test
 assignee: []
 created_date: '2026-11-05'

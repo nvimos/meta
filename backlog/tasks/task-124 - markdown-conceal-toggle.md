@@ -1,6 +1,6 @@
 ---
 id: TASK-124
-title: 'markdown: conceal toggle and cycle'
+title: 'markdown conceal toggle'
 status: Needs Test
 assignee: []
 created_date: '2026-11-12'

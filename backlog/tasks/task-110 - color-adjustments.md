@@ -1,6 +1,6 @@
 ---
 id: TASK-110
-title: 'look: colors, statusline, winbar, zen, GUI: finished work, Oct-Nov 2026'
+title: 'color adjustments'
 status: Needs Test
 assignee: []
 created_date: '2026-10-24'

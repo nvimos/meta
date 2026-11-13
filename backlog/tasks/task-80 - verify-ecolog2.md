@@ -1,6 +1,6 @@
 ---
 id: TASK-80
-title: 'verify ecolog2 (with rust) (lua/lazyp/ui-telescope/ecolog.lua; from...'
+title: 'verify ecolog2'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

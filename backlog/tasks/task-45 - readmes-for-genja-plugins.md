@@ -1,6 +1,6 @@
 ---
 id: TASK-45
-title: 'docs: READMEs for genja-ask, genja-claudefterm, genja-paste-ai (v2026 or later:...'
+title: 'readmes for genja plugins'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

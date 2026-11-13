@@ -1,6 +1,6 @@
 ---
 id: TASK-67
-title: 'claude terminal: mouse wheel scroll jitters in terminal mode (nvim-qt, mouse wheel)'
+title: 'claude terminal wheel jitter'
 status: To Do
 assignee: []
 created_date: '2026-10-28'

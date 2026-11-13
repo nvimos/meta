@@ -1,6 +1,6 @@
 ---
 id: TASK-107
-title: 'F2 context menu: finished work, Oct-Nov 2026'
+title: 'f2 context menu'
 status: Needs Test
 assignee: []
 created_date: '2026-10-24'

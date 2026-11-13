@@ -1,6 +1,6 @@
 ---
 id: TASK-91
-title: 'trim the F2 subsystem readmes'
+title: 'trim f2 readmes'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

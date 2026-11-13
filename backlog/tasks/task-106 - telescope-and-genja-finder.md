@@ -1,6 +1,6 @@
 ---
 id: TASK-106
-title: 'telescope and genja-finder: finished work, Oct-Nov 2026'
+title: 'telescope and genja-finder'
 status: Needs Test
 assignee: []
 created_date: '2026-10-25'

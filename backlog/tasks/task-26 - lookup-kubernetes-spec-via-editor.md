@@ -1,6 +1,6 @@
 ---
 id: TASK-26
-title: 'Kubernetes YAML: write manifests with the spec at hand, started before 2027, alongside...'
+title: 'lookup kubernetes spec via editor'
 status: Needs Test
 assignee: []
 created_date: '2026-11-05'

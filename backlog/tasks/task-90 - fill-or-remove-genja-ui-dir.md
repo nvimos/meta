@@ -1,6 +1,6 @@
 ---
 id: TASK-90
-title: 'give the empty `lua/genja/ui` directory real code or remove it'
+title: 'fill or remove genja ui dir'
 status: To Do
 assignee: []
 created_date: '2026-11-08'

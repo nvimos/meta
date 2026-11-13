@@ -1,6 +1,6 @@
 ---
 id: TASK-113
-title: 'config: startup, lazy, plugins, options: finished work, Oct-Nov 2026'
+title: 'startup, lazy, plugins and options'
 status: Needs Test
 assignee: []
 created_date: '2026-10-24'

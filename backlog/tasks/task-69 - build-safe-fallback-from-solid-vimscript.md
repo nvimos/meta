@@ -1,6 +1,6 @@
 ---
 id: TASK-69
-title: 'make a safe fall-back version based on the solid-vimscript'
+title: 'build safe fallback from solid-vimscript'
 status: To Do
 assignee: []
 created_date: '2026-11-10'

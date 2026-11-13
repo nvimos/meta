@@ -1,6 +1,6 @@
 ---
 id: TASK-108
-title: 'keys: which-key, keymaps, mouse, layouts: finished work, Oct-Nov 2026'
+title: 'which-key, keymaps, mouse and layouts'
 status: Needs Test
 assignee: []
 created_date: '2026-10-25'

@@ -1,6 +1,6 @@
 ---
 id: TASK-24
-title: 'nvim as the interface to the OS for coding work: shell, terminal, pwsh, Git Bash, git'
+title: 'find tasks that still leave nvim'
 status: Needs Test
 assignee: []
 created_date: '2026-11-05'
