@@ -1,6 +1,6 @@
 ---
 id: TASK-127
-title: 'markdown-preview: what it does'
+title: 'markdown preview docs'
 status: Done
 assignee: []
 created_date: '2026-11-12'

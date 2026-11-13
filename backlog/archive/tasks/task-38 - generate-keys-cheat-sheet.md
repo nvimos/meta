@@ -1,6 +1,6 @@
 ---
 id: TASK-38
-title: 'look into generating a cheat-sheet from existing keys'
+title: 'generate keys cheat sheet'
 status: Done
 assignee: []
 created_date: '2026-11-10'

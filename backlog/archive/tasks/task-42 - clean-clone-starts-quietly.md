@@ -1,6 +1,6 @@
 ---
 id: TASK-42
-title: 'clean clone starts without warnings, startup below 1 s (tests/startup, f1951ca,...'
+title: 'clean clone starts quietly'
 status: Done
 assignee: []
 created_date: '2026-11-10'

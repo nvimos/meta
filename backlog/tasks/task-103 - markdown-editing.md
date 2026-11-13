@@ -1,6 +1,6 @@
 ---
 id: TASK-103
-title: 'markdown editing: finished work, Oct-Nov 2026'
+title: 'markdown editing'
 status: Needs Test
 assignee: []
 created_date: '2026-10-24'

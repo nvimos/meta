@@ -1,6 +1,6 @@
 ---
 id: TASK-31
-title: 'ai, llm, code generation'
+title: 'ai llm code generation'
 status: Done
 assignee: []
 created_date: '2026-10-29'

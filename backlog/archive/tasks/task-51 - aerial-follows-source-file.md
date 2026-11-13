@@ -1,6 +1,6 @@
 ---
 id: TASK-51
-title: 'aerial sidebar follows the file shown in the source window'
+title: 'aerial follows source file'
 status: Done
 assignee: []
 created_date: '2026-11-10'

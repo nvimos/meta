@@ -1,6 +1,6 @@
 ---
 id: TASK-94
-title: 'todo files out of the config repo into nvimos/meta'
+title: 'todo files into nvimos-meta'
 status: Done
 assignee: []
 created_date: '2026-11-10'

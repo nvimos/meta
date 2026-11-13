@@ -1,6 +1,6 @@
 ---
 id: TASK-34
-title: 'only enable / install needed languages with a conservative set of defaults'
+title: 'install only needed languages'
 status: Done
 assignee: []
 created_date: '2026-11-10'

@@ -1,6 +1,6 @@
 ---
 id: TASK-37
-title: 'bootstrap core plugins with neovim'
+title: 'bootstrap core plugins'
 status: Dropped
 assignee: []
 created_date: '2026-11-10'

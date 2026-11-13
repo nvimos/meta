@@ -1,6 +1,6 @@
 ---
 id: TASK-55
-title: 'adding a language: one documented step (readme.add-a-language.md, 7b69862)'
+title: 'documented add-a-language step'
 status: Done
 assignee: []
 created_date: '2026-11-10'

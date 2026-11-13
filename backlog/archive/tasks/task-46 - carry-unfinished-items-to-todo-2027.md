@@ -1,6 +1,6 @@
 ---
 id: TASK-46
-title: 'backlog: unfinished items to todo-2027.md (own keymap logger, claude -p minuet...'
+title: 'carry unfinished items to todo-2027'
 status: Done
 assignee: []
 created_date: '2026-11-10'

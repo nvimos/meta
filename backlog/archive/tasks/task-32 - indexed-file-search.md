@@ -1,6 +1,6 @@
 ---
 id: TASK-32
-title: 'indexed file search: integrate everything search index'
+title: 'indexed file search'
 status: Done
 assignee: []
 created_date: '2026-11-10'

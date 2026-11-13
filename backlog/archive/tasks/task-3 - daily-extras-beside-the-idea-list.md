@@ -1,6 +1,6 @@
 ---
 id: TASK-3
-title: 'extras outside the idea list, Oct-Nov 2026'
+title: 'daily extras beside the idea list'
 status: Done
 assignee: []
 created_date: '2026-11-05'

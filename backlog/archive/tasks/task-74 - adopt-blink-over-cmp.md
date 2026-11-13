@@ -1,6 +1,6 @@
 ---
 id: TASK-74
-title: 'consider adopting blink over cmp or improve cmp behavior'
+title: 'adopt blink over cmp'
 status: Dropped
 assignee: []
 created_date: '2026-11-10'

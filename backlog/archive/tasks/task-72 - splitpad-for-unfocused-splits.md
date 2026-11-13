@@ -1,6 +1,6 @@
 ---
 id: TASK-72
-title: 'for split buffers that are out of focus (plug-wip/genja-splitpad.nvim; floating column...'
+title: 'splitpad for unfocused splits'
 status: Dropped
 assignee: []
 created_date: '2026-11-10'

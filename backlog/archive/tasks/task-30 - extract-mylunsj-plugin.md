@@ -1,6 +1,6 @@
 ---
 id: TASK-30
-title: 'extract Mylunsj into a separate plugin'
+title: 'extract mylunsj plugin'
 status: Dropped
 assignee: []
 created_date: '2026-11-10'

@@ -1,6 +1,6 @@
 ---
 id: TASK-126
-title: 'docs: keys out of file headers'
+title: 'keys out of file headers'
 status: Done
 assignee: []
 created_date: '2026-11-12'

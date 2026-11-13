@@ -1,6 +1,6 @@
 ---
 id: TASK-33
-title: 'look for an alternative shortcut-hint plugin'
+title: 'alternative shortcut-hint plugin'
 status: Done
 assignee: []
 created_date: '2026-10-29'

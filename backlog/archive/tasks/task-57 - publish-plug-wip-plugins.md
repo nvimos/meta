@@ -1,6 +1,6 @@
 ---
 id: TASK-57
-title: 'publish the other plug-wip plugins (done 2026-11-05: 12 repos on...'
+title: 'publish plug-wip plugins'
 status: Done
 assignee: []
 created_date: '2026-11-05'

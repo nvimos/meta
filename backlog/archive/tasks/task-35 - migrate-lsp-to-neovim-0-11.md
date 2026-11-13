@@ -1,6 +1,6 @@
 ---
 id: TASK-35
-title: 'migrate lsp, cmp config to neovim 0.11+ api'
+title: 'migrate lsp to neovim 0.11'
 status: Done
 assignee: []
 created_date: '2026-11-10'

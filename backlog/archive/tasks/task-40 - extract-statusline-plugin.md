@@ -1,6 +1,6 @@
 ---
 id: TASK-40
-title: 'factor out statusline stuff into a separate plugin'
+title: 'extract statusline plugin'
 status: Done
 assignee: []
 created_date: '2026-11-10'

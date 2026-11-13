@@ -1,6 +1,6 @@
 ---
 id: TASK-39
-title: 'open a browser and paste a query to perplexity'
+title: 'paste query to perplexity'
 status: Done
 assignee: []
 created_date: '2026-10-29'

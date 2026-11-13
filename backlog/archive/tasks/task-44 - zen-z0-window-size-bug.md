@@ -1,6 +1,6 @@
 ---
 id: TASK-44
-title: 'zen z0 doesn''t restore the window size in nvim-qt: shipped as a known bug'
+title: 'zen z0 window size bug'
 status: Done
 assignee: []
 created_date: '2026-11-05'

@@ -1,6 +1,6 @@
 ---
 id: TASK-19
-title: 'abbrev: /FAIL`<CR>` searches for "/FAIL`<C-]><CR>`" (literal text, no search)'
+title: 'abbrev fail search bug'
 status: Done
 assignee: []
 created_date: '2026-11-02'

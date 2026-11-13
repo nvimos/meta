@@ -1,6 +1,6 @@
 ---
 id: TASK-136
-title: 'docs: CLAUDE.md in headings at 100 columns, color design section'
+title: 'claude.md headings at 100 columns'
 status: Done
 assignee: []
 created_date: '2026-11-12'

@@ -1,6 +1,6 @@
 ---
 id: TASK-2
-title: 'now that jolemak keymap in win is sending the correct control chars...'
+title: 'add preview key for jolemak'
 status: Done
 assignee: []
 created_date: '2026-11-10'

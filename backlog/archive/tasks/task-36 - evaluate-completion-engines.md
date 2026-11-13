@@ -1,6 +1,6 @@
 ---
 id: TASK-36
-title: 'evaluate completion engines other than nvim-cmp'
+title: 'evaluate completion engines'
 status: Done
 assignee: []
 created_date: '2026-11-10'
