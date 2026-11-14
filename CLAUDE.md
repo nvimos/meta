@@ -27,3 +27,11 @@ These apply only inside the two folders above, not to this repo.
 - Work directly in the main checkout on `main`. No worktrees or branches unless the user asks; Claude
   works alone there, the user only makes small changes now and then.
 - Code for a POC goes only in its folder, never in this repo.
+
+## Proposals
+
+- An open proposal is something the user wants to do sometimes, not a fixed format. There is no house
+  style for proposals: `openspec/changes/merge-beside-checkout` was a one-off, so don't use it as a
+  template.
+- When the user says to add a proposal, do your best with what was said. Don't overinterpret the
+  request: no extra structure, sections or follow-up work that wasn't asked for.
