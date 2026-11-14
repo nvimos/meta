@@ -20,3 +20,9 @@ that names its task (`Status: X (backlog TASK-n)`). No item is copied into both 
 #### Scenario: A small fix
 - **WHEN** a fix needs no design
 - **THEN** it is a Backlog.md task only
+
+#### Scenario: A change split into work items
+- **WHEN** a change's work splits into several steps
+- **THEN** each step is a Backlog.md task that names the change, with its hand checks under `## Verify`;
+  the change has no tasks.md, and its proposal's Status line names the tasks (the first one in the
+  parentheses)
