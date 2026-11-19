@@ -1,7 +1,7 @@
 ---
 id: TASK-174
 title: 'crawler and hint tests'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -26,14 +26,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 repository detection covers `.git` folders and files
-- [ ] #2 nested repositories are not listed as separate checkouts
-- [ ] #3 skip rules and `AppData` depth are tested
-- [ ] #4 hint promotion and stale hints are tested
-- [ ] #5 tests run fast enough for the normal suite
+- [x] #1 repository detection covers `.git` folders and files
+- [x] #2 nested repositories are not listed as separate checkouts
+- [x] #3 skip rules and `AppData` depth are tested
+- [x] #4 hint promotion and stale hints are tested
+- [x] #5 tests run fast enough for the normal suite
 
 ## Verify
 
-- [ ] test: the whole crawler suite runs under the project's test timeout
-- [ ] test: no real drive is walked
-- [ ] check: no temp folders left behind
+- [x] test: the whole crawler suite runs under the project's test timeout
+- [x] test: no real drive is walked
+- [x] check: no temp folders left behind

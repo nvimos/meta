@@ -1,7 +1,7 @@
 ---
 id: TASK-156
 title: 'read-only local git backend'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -29,14 +29,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 `LocalBackend` implements `RepoBackend` without an editor session
-- [ ] #2 branches and current branch match `git for-each-ref` and `branch --show-current`
-- [ ] #3 log and diff produce the same `Commit`, `PrDiff` and `DiffFile` shapes Ops already uses
-- [ ] #4 status feeds Ops' `Status`, not Purrage's `StatusRow`
-- [ ] #5 a local repository can be opened and read with no Neovim process
+- [x] #1 `LocalBackend` implements `RepoBackend` without an editor session
+- [x] #2 branches and current branch match `git for-each-ref` and `branch --show-current`
+- [x] #3 log and diff produce the same `Commit`, `PrDiff` and `DiffFile` shapes Ops already uses
+- [x] #4 status feeds Ops' `Status`, not Purrage's `StatusRow`
+- [x] #5 a local repository can be opened and read with no Neovim process
 
 ## Verify
 
-- [ ] test: a temp repo with branches, commits, a modified file and an untracked file
-- [ ] test: the same repo read through `LocalBackend` matches the Neovim backend's models
-- [ ] analyze: no new warnings
+- [x] test: a temp repo with branches, commits, a modified file and an untracked file
+- [x] test: the same repo read through `LocalBackend` matches the Neovim backend's models
+- [x] analyze: no new warnings

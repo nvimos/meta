@@ -1,7 +1,7 @@
 ---
 id: TASK-179
 title: 'console and scan report'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -27,14 +27,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 an action adds one readable entry with its command and result
-- [ ] #2 a failure opens to the full report without losing git's words
-- [ ] #3 a scan adds its summary and slow/wide directory detail
-- [ ] #4 the Log is selectable and scrolls
-- [ ] #5 the view does not query git or the filesystem itself
+- [x] #1 an action adds one readable entry with its command and result
+- [x] #2 a failure opens to the full report without losing git's words
+- [x] #3 a scan adds its summary and slow/wide directory detail
+- [x] #4 the Log is selectable and scrolls
+- [x] #5 the view does not query git or the filesystem itself
 
 ## Verify
 
-- [ ] widget test: render a success and a failure entry
-- [ ] widget test: a scan report renders
+- [x] widget test: render a success and a failure entry
+- [x] widget test: a scan report renders
 - [ ] manual: perform an action, read the Log

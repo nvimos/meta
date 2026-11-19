@@ -1,7 +1,7 @@
 ---
 id: TASK-160
 title: 'hide editor actions without nvim'
-status: To Do
+status: Needs Test
 assignee:
   - claude
 created_date: '2026-11-19'
@@ -25,14 +25,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 Open in Neovim is hidden or disabled with a reason
-- [ ] #2 the status bar shows no dead cursor for a local session
-- [ ] #3 no key path calls a missing editor method
-- [ ] #4 Pull request still opens the file when an editor is present
-- [ ] #5 the same controls return when a Neovim backend is selected
+- [x] #1 Open in Neovim is hidden or disabled with a reason
+- [x] #2 the status bar shows no dead cursor for a local session
+- [x] #3 no key path calls a missing editor method
+- [x] #4 Pull request still opens the file when an editor is present
+- [x] #5 the same controls return when a Neovim backend is selected
 
 ## Verify
 
-- [ ] widget test: local mode has no Open in Neovim control
-- [ ] widget test: Neovim mode still has it
+- [x] widget test: local mode has no Open in Neovim control
+- [x] widget test: Neovim mode still has it
 - [ ] manual: press the former editor keys in local mode; nothing throws

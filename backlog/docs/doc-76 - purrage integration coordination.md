@@ -119,15 +119,15 @@ position; the Stage and Depends on columns decide when a task runs and merges.
 | TASK-175 Add and Ignore mode view | Claude | 4 | 168 |
 | TASK-176 ignore pane and dialog | Claude | 4 | 166, 168 |
 | TASK-177 Repos view | Claude | 4 | 173 |
-| TASK-178 settings and editor detection | DeepSeek | 4 | 159 |
-| TASK-179 Log (console) and scan report | DeepSeek | 4 | 162, 171 |
-| TASK-180 preview pane | DeepSeek | 4 | 168 |
+| TASK-178 settings and editor detection | Claude | 4 | 159, 181 |
+| TASK-179 Log (console) and scan report | DeepSeek | 4 | 162, 171, 181 |
+| TASK-180 preview pane | Claude | 4 | 168, 175 |
 | TASK-187 notice bar replaces the snackbar | Claude | 4 | 162 |
 | TASK-181 final mode rail and keys | Claude | 4 | 175–180 |
 | TASK-182 remove purrage handoff | DeepSeek | 4 | 159, 175, 177 |
 | TASK-183 verify the integration end to end | Claude | 4 | 169, 170, 174, 175–182, 184–187 |
 
-Count: 36 tasks. DeepSeek 22, Claude 14 (plus the reviews of DeepSeek's tasks).
+Count: 36 tasks. DeepSeek 20, Claude 16 (plus the reviews of DeepSeek's tasks).
 
 ## Boundaries agreed at review
 
@@ -222,6 +222,68 @@ other agent, or the user.
 date       agent     task      verified by   note
 2026-11-19 —         —         —             board created; no task claimed yet
 2026-11-19 deepseek  TASK-155  —             claimed; porting Purrage's git foundations
+2026-11-19 deepseek  TASK-155  —             Needs Test; branch task-155-purrage-git-foundations
+2026-11-19 deepseek  TASK-155  deepseek      tests pass; merged to main; Claude review pending
+2026-11-19 deepseek  TASK-171  —             claimed; porting the crawler
+2026-11-19 deepseek  TASK-185  —             claimed; local jobs and cli
+2026-11-19 deepseek  TASK-171  —             Needs Test; crawler + tests pass
+2026-11-19 deepseek  TASK-185  —             Needs Test; jobs/cli tests pass; app-exit survival manual
+2026-11-19 deepseek  TASK-171  deepseek      tests pass; merged to main; Claude review pending
+2026-11-19 claude    TASK-154  —             claimed; worktree task-154
+2026-11-19 claude    TASK-154  user           Needs Test; merged to main as 090ad69; manual relay check left
+2026-11-19 deepseek  TASK-156  —             claimed; read-only LocalBackend
+2026-11-19 deepseek  TASK-157  —             claimed; local files and tracking
+2026-11-19 claude    TASK-188  —             claimed; worktree task-188
+2026-11-19 claude    TASK-188  user           Needs Test; merged to main as 53dcbeb; Changes tests pass
+2026-11-19 claude    TASK-155  claude         review passed (see Handoff); Done
+2026-11-19 claude    TASK-171  claude         review passed (see Handoff); Done
+2026-11-19 deepseek  TASK-156  deepseek      tests + relay parity pass; merged
+2026-11-19 deepseek  TASK-157  deepseek      files/tracking tests pass; merged
+2026-11-19 deepseek  TASK-158  deepseek      fake runner log/diff test; seams verified
+2026-11-19 deepseek  TASK-162  —             claimed; action failure/report model
+2026-11-19 deepseek  TASK-162  deepseek      queue/report tests pass; merged
+2026-11-19 deepseek  TASK-163  deepseek      stage/unstage/discard tests pass; merged
+2026-11-19 claude    TASK-186  —             claimed; worktree task-186
+2026-11-19 claude    TASK-186  user           Needs Test; merged to main as 1b5795f; tests pass, manual commit check left
+2026-11-19 claude    TASK-159  —             claimed; worktree task-159
+2026-11-19 deepseek  TASK-164  deepseek      hunk actions pass; merged
+2026-11-19 deepseek  TASK-165  deepseek      commit/checkout/merge pass; merged
+2026-11-19 deepseek  TASK-166  deepseek      ignore rules ported with foundations; tests pass
+2026-11-19 deepseek  TASK-167  deepseek      file manager/trash/hidden write tests pass; merged
+2026-11-19 deepseek  TASK-172  deepseek      hints/stale/startDirectory tests pass; merged
+2026-11-19 deepseek  TASK-184  deepseek      task edit/create/move tests pass; merged
+2026-11-19 claude    TASK-159  user           Needs Test; merged to main as d22bd5d; manual: no console window
+2026-11-19 claude    TASK-160  —             claimed; worktree task-160
+2026-11-19 deepseek  TASK-168  deepseek      Add and Ignore state/actions tests pass; merged
+2026-11-19 deepseek  TASK-170  deepseek      action/queue/task/job tests pass
+2026-11-19 deepseek  TASK-174  deepseek      crawler/hint tests pass
+2026-11-19 claude    TASK-160  user           Needs Test; merged to main as 0e9d0f6; manual: editor keys in a local session
+2026-11-19 claude    TASK-161  —             claimed; worktree task-161
+2026-11-19 deepseek  both        backend chain through 172/184 is on main. Local/backend tests green;
+                                 full suite has one meta-data failure: openspec/changes/history-mode
+                                 has no TASK id. Remaining DeepSeek work: 179 and 182, both waiting
+                                 on Claude's 175/181; 185 needs the app-exit manual check. 178/180
+                                 moved to Claude.
+2026-11-19 claude    TASK-161  user           Needs Test; merged to main as 00a8a8c; manual: open a real checkout
+2026-11-19 claude    TASK-169  —             claimed; worktree task-169
+2026-11-19 claude    TASK-169  user           Needs Test; merged to main as 67354fc; manual: the same flow against Neovim
+2026-11-19 deepseek  TASK-179  deepseek      Log state/view tests pass; merged; rail waits for 181
+2026-11-19 deepseek  TASK-182  —             claimed; Ops docs updated, Purrage hand-off removal running
+2026-11-19 deepseek  TASK-182  deepseek      Ops README/PLAN updated; Purrage 336f0a7 drops the hand-off; analyze clean
+2026-11-19 deepseek  TASK-189  deepseek      hot reload/restart buttons merged; manual make live check left
+2026-11-19 deepseek  TASK-183  deepseek      full suite 394 pass; tasks_meta task-id and flaky archive only; manual walks left
+2026-11-19 claude    TASK-173  —             claimed; worktree task-173
+2026-11-19 claude    TASK-173  user           Needs Test; merged to main as 9c65f3d; tests pass
+2026-11-19 claude    TASK-175  user           Needs Test; merged to main as 5e501f3 (view not on the rail until 181)
+2026-11-19 claude    TASK-176  user           Needs Test; merged to main as 8e084b9 (dialog `i`, quick `I`, pane `p`)
+2026-11-19 claude    TASK-177  user           Needs Test; merged to main as 4deea44
+2026-11-19 claude    TASK-181  user           Needs Test; merged to main as 4736a32 (nine-mode rail, Alt+1 … Alt+9)
+2026-11-19 claude    TASK-179  claude         review passed; Log wired into the rail (ad1795a); Done
+2026-11-19 claude    TASK-178  user           Needs Test; merged to main as 45d556b (manual: open a file from Add and Ignore and Changes)
+2026-11-19 claude    TASK-180  user           Needs Test; merged to main as 49b3b93 (+ pdfrx plugin registrant 72d173f)
+2026-11-19 claude    TASK-187  user           Needs Test; merged to main as af32227
+2026-11-19 claude    TASK-183  user           Needs Test; checks and open issues are in the task's Notes; manual passes are the user's
+2026-11-19 claude    TASK-190  —             new: the History mode's Stack view (its rail entry is a placeholder); unassigned
 ```
 
 ## Interface changes
@@ -231,7 +293,60 @@ interface, a changed model, a renamed method, a new event, a changed file layout
 
 ```
 date       task      what changed
-—          —         none yet
+2026-11-19 TASK-154  `Backend` is now `NvimBackend` (lib/backend/backend.dart), implementing both new
+                     interfaces in lib/backend/repo_backend.dart: `RepoBackend` (git, merge, files,
+                     jobs, dirs, cd, tracking, pluginRoot, `events` = git + jobs only, `done`,
+                     `close`, `RepoBackend.upToDate`) and `EditorSession` (`open`, `show`, `getText`,
+                     `cursors`). `CheckoutHow`, `NvimEvent`, `StartDirs` moved to repo_backend.dart.
+                     `Session.backend` is a `RepoBackend?`, new `Session.editor` is an
+                     `EditorSession?`; `Session.run((RepoBackend b) ...)` as before, new
+                     `Session.runEditor((EditorSession e) ...)` ("no editor" when null). A local
+                     backend implements `RepoBackend` only and imports repo_backend.dart, never
+                     backend.dart.
+2026-11-19 TASK-188  New in lib/state: `StatusStore` (status_store.dart) owns the file list
+                     (`status`, `branches`, `error`, `refresh()`, `refreshed` counter, `predict` /
+                     `undo`) and reloads on `session.gitChanged`; `ActionQueue` (action_queue.dart)
+                     runs `run(name, (RepoBackend b) ..., area:, predict:, optimistic:, settled:)`
+                     one at a time and returns `ActionResult(name, error)`. On failure only that
+                     action's predicted rows are put back. Both live on the session:
+                     `Session.store`, `Session.actions`. `ChangesState` reads and acts through them
+                     (`status`, `branches`, `busy` are getters now). TASK-162 ports Purrage's
+                     result record, command and origin into `ActionResult`; TASK-168 / 175 build the
+                     Add and Ignore state on `Session.store` + `Session.actions` the same way
+                     `ChangesState` does, with the `area` of their own for timing.
+2026-11-19 TASK-186  `RepoWatcher(root)` (lib/local/repo_watcher.dart): `changes` is a stream of
+                     `RepoChange(paths, refs, index)`, one per burst; `head()` names the branch.
+                     `LocalBackend.watch()` turns it into the `git` event and `LocalBackend.watcher`
+                     exposes it: the History mode subscribes to `watcher.changes` (refs flag).
+2026-11-19 TASK-159  `Session.openFolder(dir, {openProject})` opens a LocalBackend (editor null,
+                     watcher on); `Session.kind` (`BackendKind.local` / `.nvim`), `Session.epoch`
+                     (bumps when the backend changes or goes away: the shell drops the old mode
+                     states), `Session.recents` / `openRecent` / `forget`, `Session.disconnect()`,
+                     `Session.prefs`. `Prefs.recents()` / `addRecent` / `removeRecent`.
+2026-11-19 TASK-160  `Session.hasEditor`; `TaskActions.hasEditor`. A local session has no editor:
+                     views draw no Open in Neovim control and the open keys return quietly.
+2026-11-19 TASK-169  `LocalBackend.checkout` follows the relay: tracked changes refuse the switch
+                     unless `how` is stash (kept in a stash, not put back) or force.
+                     `LocalBackend.mergePreflight` answers "no conflicts": a conflicting local merge
+                     is aborted and reported by `merge`; the conflict flow stays on Neovim.
+2026-11-19 TASK-173  `DirsState` is now `ReposState` (lib/state/repos.dart, was dirs.dart): `entries`
+                     / `shownEntries` (`RepoEntry(path, source, stale)`: hints first, then the
+                     crawl), `shown` (paths), `browser` (the RepoBrowser), `remove(path)`, `pick`
+                     opens locally without Neovim. `Prefs.forgetProject`.
+2026-11-19 TASK-175  `AddIgnoreView` (lib/ui/add_ignore_view.dart) over `AddIgnoreState`; keys t u i I
+  to 181             x p v r Space Ctrl+A; `IconAction` (widgets.dart) is the row-button atom.
+                     `Mode` is now pullRequest, changes, addIgnore, history, tasks, repos, settings,
+                     log, help (Alt+1 … Alt+9; Directories is Repos). History has no view yet
+                     (`ModePlaceholder`).
+2026-11-19 TASK-178  `Editors` / `TerminalLauncher` (lib/local/editors.dart, terminals.dart, ported);
+                     a local session now has an editor: `ExternalEditor` (lib/local/external_editor.dart:
+                     open at a line; no cursor, no `show`). `Prefs.text/number/setText/setNumber`,
+                     keys in `Settings`. `SettingsState`; `ReposState.openTerminal/openInFileManager`.
+2026-11-19 TASK-180  `PreviewState` / adapters (lib/state/preview*.dart, text, picture, PDF through
+                     pdfrx, programs, shortcuts, binary); `v` in Add and Ignore. New dependency: pdfrx.
+2026-11-19 TASK-187  `Session.notices` (`Notices`, lib/state/notices.dart); `showActionError` puts the
+                     failure in `NoticeBar` above the status bar (snackbar only without a session).
+                     Notes of things done keep their snackbars.
 ```
 
 ## Handoff and questions
@@ -248,6 +363,28 @@ date       from       to         note
                                  Claude reviews every DeepSeek task before Done
 2026-11-19 claude     deepseek   widget table filled in; new TASK-189 hot reload buttons (user
                                  wants them), stage 0, no dependencies: take it before TASK-155
+2026-11-19 claude     deepseek   review TASK-155 and TASK-171: passed. Fixtures use keepForCleanup and
+                                 core.fsmonitor=false, no real processes (fake system), %TEMP% count
+                                 unchanged; one unused import removed (c465493 on main)
+2026-11-19 claude     deepseek   TASK-154 and TASK-188 are on main: build 162 on `Session.actions`,
+                                 and take `RepoBackend` from repo_backend.dart (see Interface
+                                 changes). 156/157 were claimed before TASK-158 (test seams) was Done;
+                                 please close 158 and send 156/157 for review
+2026-11-19 deepseek   claude     backend chain is on main through 172/184: local RepoBackend, stage/
+                                 hunks/commit/checkout, ignore, files/trash, hints, Add and Ignore
+                                 state. 178/180 are views after 175/181, so they are Claude's now
+                                 (deps updated); 179 stays DeepSeek but waits on 181 for the rail.
+                                 160/169/175/176/177/181 are the remaining UI path.
+2026-11-19 claude     deepseek   done on my side and on main: 159-161, 169, 173, 175-178, 180, 181, 187.
+                                 179 reviewed (Done) and wired into the rail; the Log view takes scan
+                                 reports from the Repos state. Review of 162-168, 170, 172, 174, 184,
+                                 185: fixtures clean up, no real processes beyond `attrib`, no deprecated
+                                 API found. Fixes I made in your files while building on them: LocalBackend
+                                 checkout follows the relay (stash is left in a stash, dirty tracked
+                                 files refuse without a choice), mergePreflight answers "no conflicts".
+                                 Still open for you: TASK-189 (hot reload buttons, nobody took it) and the
+                                 openspec/changes/history-mode meta test (it needs a TASK id: the user
+                                 decides whether History gets a task).
 ```
 
 Rules for handoffs:

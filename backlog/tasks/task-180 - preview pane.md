@@ -1,9 +1,9 @@
 ---
 id: TASK-180
 title: 'preview pane'
-status: To Do
+status: Needs Test
 assignee:
-  - deepseek
+  - claude
 created_date: '2026-11-19'
 labels:
   - frontend
@@ -11,6 +11,7 @@ labels:
   - purrage
 dependencies:
   - TASK-168
+  - TASK-175
 ordinal: 180000
 ---
 
@@ -25,14 +26,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 the preview pane appears in the Add and Ignore mode only
-- [ ] #2 a selected text file previews without changing the list
-- [ ] #3 a binary or unsupported file says so
-- [ ] #4 the preview does not block the UI on a large file
-- [ ] #5 a PDF and an image preview through the ported adapters
+- [x] #1 the preview pane appears in the Add and Ignore mode only
+- [x] #2 a selected text file previews without changing the list
+- [x] #3 a binary or unsupported file says so
+- [x] #4 the preview does not block the UI on a large file
+- [x] #5 a PDF and an image preview through the ported adapters
 
 ## Verify
 
-- [ ] widget test: a text preview and an unsupported file
+- [x] widget test: a text preview and an unsupported file
 - [ ] manual: move the cursor through mixed files
-- [ ] check: no new dependency left unused
+- [x] check: no new dependency left unused

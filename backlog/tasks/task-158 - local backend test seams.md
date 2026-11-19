@@ -1,7 +1,7 @@
 ---
 id: TASK-158
 title: 'local backend test seams'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -26,14 +26,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 a fake process runner can return status, log and diff output
-- [ ] #2 a temp repository is a `git init` fixture with `core.fsmonitor=false`, registered with `keepForCleanup`
-- [ ] #3 every temp folder is removed when the test file ends
-- [ ] #4 no headless Neovim is needed for local backend tests
-- [ ] #5 the helper is shared by later local action tests
+- [x] #1 a fake process runner can return status, log and diff output
+- [x] #2 a temp repository is a `git init` fixture with `core.fsmonitor=false`, registered with `keepForCleanup`
+- [x] #3 every temp folder is removed when the test file ends
+- [x] #4 no headless Neovim is needed for local backend tests
+- [x] #5 the helper is shared by later local action tests
 
 ## Verify
 
-- [ ] test: one test drives the ported `GitRepo` through fakes only
-- [ ] test: a temp repo test runs twice in a row without leftovers
-- [ ] check: the `%TEMP%` `nvimos_*` count is unchanged after the run
+- [x] test: one test drives the ported `GitRepo` through fakes only
+- [x] test: a temp repo test runs twice in a row without leftovers
+- [x] check: the `%TEMP%` `nvimos_*` count is unchanged after the run

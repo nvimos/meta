@@ -1,7 +1,7 @@
 ---
 id: TASK-168
 title: 'purrage mode state and actions'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -29,15 +29,15 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 rows group into conflicts, staged, changed and untracked
-- [ ] #2 rows are Ops' `Status` model, not a second Purrage `StatusRow` truth
-- [ ] #3 selection follows plain, ctrl and shift click, and prunes on reload
-- [ ] #4 track, untrack, ignore and delete work through the action queue
-- [ ] #5 the cursor survives a reload when the path still exists
-- [ ] #6 the state is driveable without widgets
+- [x] #1 rows group into conflicts, staged, changed and untracked
+- [x] #2 rows are Ops' `Status` model, not a second Purrage `StatusRow` truth
+- [x] #3 selection follows plain, ctrl and shift click, and prunes on reload
+- [x] #4 track, untrack, ignore and delete work through the action queue
+- [x] #5 the cursor survives a reload when the path still exists
+- [x] #6 the state is driveable without widgets
 
 ## Verify
 
-- [ ] test: selection and filter with a fixture row set
-- [ ] test: track/untrack/ignore/delete through a fake repo
-- [ ] test: a failed action restores only its rows
+- [x] test: selection and filter with a fixture row set
+- [x] test: track/untrack/ignore/delete through a fake repo
+- [x] test: a failed action restores only its rows

@@ -1,7 +1,7 @@
 ---
 id: TASK-163
 title: 'local file stage and discard'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -25,14 +25,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 stage and unstage move whole files between sections
-- [ ] #2 discard restores a tracked file and removes an untracked one safely
-- [ ] #3 a deleted file stages its deletion
-- [ ] #4 a failure restores exactly the affected rows
-- [ ] #5 the Neovim backend's file actions are unchanged
+- [x] #1 stage and unstage move whole files between sections
+- [x] #2 discard restores a tracked file and removes an untracked one safely
+- [x] #3 a deleted file stages its deletion
+- [x] #4 a failure restores exactly the affected rows
+- [x] #5 the Neovim backend's file actions are unchanged
 
 ## Verify
 
-- [ ] test: stage, unstage and discard in a temp repo
-- [ ] test: a missing path and a permission failure produce the expected report
-- [ ] test: the action queue stays ordered
+- [x] test: stage, unstage and discard in a temp repo
+- [x] test: a missing path and a permission failure produce the expected report
+- [x] test: the action queue stays ordered

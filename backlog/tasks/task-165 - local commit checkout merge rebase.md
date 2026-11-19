@@ -1,7 +1,7 @@
 ---
 id: TASK-165
 title: 'local commit checkout merge rebase'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -24,15 +24,15 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 commit uses `git commit -F -` and returns the new HEAD
-- [ ] #2 checkout with stash preserves and restores local changes
-- [ ] #3 checkout with force discards them only when asked
-- [ ] #4 merge and rebase return the new sha or the up-to-date marker
-- [ ] #5 failures keep git's message and leave no half-finished state of our making
-- [ ] #6 a conflicting merge is aborted and reported; the worktree conflict flow stays on Neovim for now
+- [x] #1 commit uses `git commit -F -` and returns the new HEAD
+- [x] #2 checkout with stash preserves and restores local changes
+- [x] #3 checkout with force discards them only when asked
+- [x] #4 merge and rebase return the new sha or the up-to-date marker
+- [x] #5 failures keep git's message and leave no half-finished state of our making
+- [x] #6 a conflicting merge is aborted and reported; the worktree conflict flow stays on Neovim for now
 
 ## Verify
 
-- [ ] test: commit in a temp repo, read the message back
-- [ ] test: checkout with a dirty tree, both stash and force
-- [ ] test: a clean merge and an up-to-date rebase
+- [x] test: commit in a temp repo, read the message back
+- [x] test: checkout with a dirty tree, both stash and force
+- [x] test: a clean merge and an up-to-date rebase

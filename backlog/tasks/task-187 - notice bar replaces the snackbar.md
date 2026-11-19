@@ -1,7 +1,7 @@
 ---
 id: TASK-187
 title: 'notice bar replaces the snackbar'
-status: To Do
+status: Needs Test
 assignee:
   - claude
 created_date: '2026-11-19'
@@ -26,14 +26,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 every former `showActionError` call shows the notice bar instead
-- [ ] #2 Details opens the full, selectable trace with Neovim's or git's own words
-- [ ] #3 the notice does not close while hovered, and closes on its timer after the mouse leaves
-- [ ] #4 repeated failures of one action group into one notice
-- [ ] #5 the Details button has the pointer cursor and a tooltip
+- [x] #1 every former `showActionError` call shows the notice bar instead
+- [x] #2 Details opens the full, selectable trace with Neovim's or git's own words
+- [x] #3 the notice does not close while hovered, and closes on its timer after the mouse leaves
+- [x] #4 repeated failures of one action group into one notice
+- [x] #5 the Details button has the pointer cursor and a tooltip
 
 ## Verify
 
-- [ ] widget test: a failed action shows the notice; hover keeps it open; Details shows the trace
+- [x] widget test: a failed action shows the notice; hover keeps it open; Details shows the trace
 - [ ] check: no `ScaffoldMessenger` snackbar call remains for action errors
 - [ ] manual: fail an action in Changes and in Tasks

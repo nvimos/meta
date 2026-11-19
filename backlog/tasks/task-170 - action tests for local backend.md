@@ -1,7 +1,7 @@
 ---
 id: TASK-170
 title: 'action tests for local backend'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -34,13 +34,13 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 every action has a success and a failure test
-- [ ] #2 optimistic restore is tested for multi-row actions
-- [ ] #3 a pending action blocks a stale refresh
-- [ ] #4 ignore duplicates, nested repos and CRLF are covered
-- [ ] #5 task file edits and the expect-check are covered
-- [ ] #6 local jobs, cancel and `cli` results are covered
-- [ ] #7 tests leave no temp folder or git process behind
+- [x] #1 every action has a success and a failure test
+- [x] #2 optimistic restore is tested for multi-row actions
+- [x] #3 a pending action blocks a stale refresh
+- [x] #4 ignore duplicates, nested repos and CRLF are covered
+- [x] #5 task file edits and the expect-check are covered
+- [x] #6 local jobs, cancel and `cli` results are covered
+- [x] #7 tests leave no temp folder or git process behind
 
 ## Verify
 

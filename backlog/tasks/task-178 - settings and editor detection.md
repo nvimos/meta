@@ -1,9 +1,9 @@
 ---
 id: TASK-178
 title: 'settings and editor detection'
-status: To Do
+status: Needs Test
 assignee:
-  - deepseek
+  - claude
 created_date: '2026-11-19'
 labels:
   - frontend
@@ -11,6 +11,7 @@ labels:
   - purrage
 dependencies:
   - TASK-159
+  - TASK-181
 ordinal: 178000
 ---
 
@@ -26,14 +27,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 a local session can open a file in the detected editor at a line
-- [ ] #2 the editor choice survives a restart
-- [ ] #3 the terminal launcher and folder opener work on Windows
-- [ ] #4 scan depth is editable and applies to the next crawl
-- [ ] #5 a missing editor is a clear message, not a crash
+- [x] #1 a local session can open a file in the detected editor at a line
+- [x] #2 the editor choice survives a restart
+- [x] #3 the terminal launcher and folder opener work on Windows
+- [x] #4 scan depth is editable and applies to the next crawl
+- [x] #5 a missing editor is a clear message, not a crash
 
 ## Verify
 
-- [ ] test: detection order with fake PATH/environment
-- [ ] test: an unset choice falls back to the detected editor
+- [x] test: detection order with fake PATH/environment
+- [x] test: an unset choice falls back to the detected editor
 - [ ] manual: open a file from the Add and Ignore mode and from Changes

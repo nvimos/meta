@@ -1,7 +1,7 @@
 ---
 id: TASK-166
 title: 'port ignore rules'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -25,14 +25,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 a rule is previewed for each scope without writing
-- [ ] #2 one batched `check-ignore` answers for many paths
-- [ ] #3 rules append under the Purrage section without duplicate lines
-- [ ] #4 line endings and the final newline are preserved
-- [ ] #5 a path in a nested repository is not given a rule in the outer one
+- [x] #1 a rule is previewed for each scope without writing
+- [x] #2 one batched `check-ignore` answers for many paths
+- [x] #3 rules append under the Purrage section without duplicate lines
+- [x] #4 line endings and the final newline are preserved
+- [x] #5 a path in a nested repository is not given a rule in the outer one
 
 ## Verify
 
-- [ ] test: each scope and target on a temp repo
-- [ ] test: Windows drive letters in `check-ignore` output parse correctly
-- [ ] test: CRLF and LF ignore files both survive an append
+- [x] test: each scope and target on a temp repo
+- [x] test: Windows drive letters in `check-ignore` output parse correctly
+- [x] test: CRLF and LF ignore files both survive an append

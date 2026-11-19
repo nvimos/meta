@@ -1,7 +1,7 @@
 ---
 id: TASK-162
 title: 'port the purrage action model'
-status: To Do
+status: Done
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -27,14 +27,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 actions run one at a time in a queue
-- [ ] #2 an optimistic row change can be undone without touching another action's rows
-- [ ] #3 a pending action suppresses a stale refresh
-- [ ] #4 every result carries action, origin, command, parameters and changed count
-- [ ] #5 failure text keeps git's own words and the command line
+- [x] #1 actions run one at a time in a queue
+- [x] #2 an optimistic row change can be undone without touching another action's rows
+- [x] #3 a pending action suppresses a stale refresh
+- [x] #4 every result carries action, origin, command, parameters and changed count
+- [x] #5 failure text keeps git's own words and the command line
 
 ## Verify
 
-- [ ] test: two queued actions finish in order
-- [ ] test: a failure restores only its own rows
-- [ ] test: a refresh during a pending action does not flicker the list back
+- [x] test: two queued actions finish in order
+- [x] test: a failure restores only its own rows
+- [x] test: a refresh during a pending action does not flicker the list back

@@ -1,7 +1,7 @@
 ---
 id: TASK-177
 title: 'projects view'
-status: To Do
+status: Needs Test
 assignee:
   - claude
 created_date: '2026-11-19'
@@ -25,14 +25,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 the view lists crawled repositories, ordered by hints
-- [ ] #2 the active and connected repositories are marked and first
-- [ ] #3 a folder can be chosen as the crawl start
-- [ ] #4 a scan can be started and its progress/report is visible
-- [ ] #5 picking and opening a project keep the current behaviour
+- [x] #1 the view lists crawled repositories, ordered by hints
+- [x] #2 the active and connected repositories are marked and first
+- [x] #3 a folder can be chosen as the crawl start
+- [x] #4 a scan can be started and its progress/report is visible
+- [x] #5 picking and opening a project keep the current behaviour
 
 ## Verify
 
-- [ ] widget test: fixture crawler, render and pick
-- [ ] widget test: a stale hint shows greyed, and Remove takes it away
+- [x] widget test: fixture crawler, render and pick
+- [x] widget test: a stale hint shows greyed, and Remove takes it away
 - [ ] manual: browse a real home folder and open a repo

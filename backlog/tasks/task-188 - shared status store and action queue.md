@@ -1,7 +1,7 @@
 ---
 id: TASK-188
 title: 'shared status store and action queue'
-status: To Do
+status: Needs Test
 assignee:
   - claude
 created_date: '2026-11-19'
@@ -28,13 +28,13 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 one status store per repository is the only owner of the file list
-- [ ] #2 the action queue interface covers optimistic change, rollback of that action's rows, and result
-- [ ] #3 `ChangesState` reads the store and runs actions through the queue, with unchanged behaviour
-- [ ] #4 the interfaces are recorded in doc-76 before the task reaches Needs Test
+- [x] #1 one status store per repository is the only owner of the file list
+- [x] #2 the action queue interface covers optimistic change, rollback of that action's rows, and result
+- [x] #3 `ChangesState` reads the store and runs actions through the queue, with unchanged behaviour
+- [x] #4 the interfaces are recorded in doc-76 before the task reaches Needs Test
 
 ## Verify
 
-- [ ] test: the existing Changes tests pass unchanged
-- [ ] test: two mode states over one store see the same rows after an action
-- [ ] review: TASK-162 and TASK-168 can build on it without changing it
+- [x] test: the existing Changes tests pass unchanged
+- [x] test: two mode states over one store see the same rows after an action
+- [x] review: TASK-162 and TASK-168 can build on it without changing it

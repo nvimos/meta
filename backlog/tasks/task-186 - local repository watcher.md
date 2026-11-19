@@ -1,7 +1,7 @@
 ---
 id: TASK-186
 title: 'local repository watcher'
-status: To Do
+status: Needs Test
 assignee:
   - claude
 created_date: '2026-11-19'
@@ -28,14 +28,14 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 
 ## Acceptance Criteria
 
-- [ ] #1 an edit made outside Ops reaches the views without a manual refresh
-- [ ] #2 a burst of changes (a checkout, a rebase) produces one refresh, not one per file
-- [ ] #3 `.git/objects` churn and ignored build trees do not trigger refreshes
-- [ ] #4 the watcher stops when the session closes or switches backend
-- [ ] #5 the History mode can subscribe to ref changes from the same watcher
+- [x] #1 an edit made outside Ops reaches the views without a manual refresh
+- [x] #2 a burst of changes (a checkout, a rebase) produces one refresh, not one per file
+- [x] #3 `.git/objects` churn and ignored build trees do not trigger refreshes
+- [x] #4 the watcher stops when the session closes or switches backend
+- [x] #5 the History mode can subscribe to ref changes from the same watcher
 
 ## Verify
 
-- [ ] test: write a file in a temp repo, the change signal fires once after the debounce
-- [ ] test: closing the session leaves no watcher running
+- [x] test: write a file in a temp repo, the change signal fires once after the debounce
+- [x] test: closing the session leaves no watcher running
 - [ ] manual: `git commit` in a terminal shows up in Changes

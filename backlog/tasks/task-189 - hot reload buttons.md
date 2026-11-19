@@ -1,7 +1,7 @@
 ---
 id: TASK-189
 title: 'hot reload buttons'
-status: To Do
+status: Needs Test
 assignee:
   - deepseek
 created_date: '2026-11-19'
@@ -29,11 +29,11 @@ Coordination: `backlog/docs/doc-76 - purrage integration coordination.md`.
 - [ ] #1 under `make live` / `flutter run`, the reload button reloads changed code and keeps the state
 - [ ] #2 the restart button restarts the app from `main`
 - [ ] #3 a release build shows neither button
-- [ ] #4 a failed reload says why in one line (the action error UI), not a crash
-- [ ] #5 both buttons have the pointer cursor and a tooltip; reload and restart are timed as `app.reload` / `app.restart`
+- [x] #4 a failed reload says why in one line (the action error UI), not a crash
+- [x] #5 both buttons have the pointer cursor and a tooltip; reload and restart are timed as `app.reload` / `app.restart`
 
 ## Verify
 
-- [ ] test: a fake `HotReload` with `available: false` draws no buttons
-- [ ] test: a fake that throws reports the message
+- [x] test: a fake `HotReload` with `available: false` draws no buttons
+- [x] test: a fake that throws reports the message
 - [ ] manual: `make live`, change a label, press reload
