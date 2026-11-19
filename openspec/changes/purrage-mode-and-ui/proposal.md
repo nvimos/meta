@@ -1,7 +1,7 @@
 # the Purrage mode and the remaining Purrage UI
 
 Tags: integrate-purrage
-Status: Open proposal, not decided, not to be implemented yet. Part 5 of 5 in the Purrage integration.
+Status: Needs Test (approved and built on 2026-11-19; two tasks done, nine wait for the user's test; the Ignore panes are reworked in `ops-ignore-pane`; see doc-76). Part 5 of 5 in the Purrage integration.
 Tasks: TASK-175, TASK-176, TASK-177, TASK-178, TASK-179, TASK-180, TASK-181, TASK-182, TASK-183, TASK-187, TASK-189.
 
 ## Why

@@ -1,6 +1,6 @@
 # a history mode with stacked branches
 
-Status: Open proposal, decided in part (see Decided). Project: frontend (Ops). There is no backlog task yet.
+Status: To Do (backlog TASK-190). Open proposal, decided in part (see Decided). Project: frontend (Ops).
 
 ## Why
 

@@ -1,7 +1,10 @@
 # merge conflict view
 
-Status: To Do (backlog TASK-151 to TASK-153). Builds on `merge-beside-checkout` (TASK-143 to TASK-146)
-and TASK-150. Drafted 2026-11-15; nothing here is built yet.
+Status: In Progress (backlog TASK-151 to TASK-153). Builds on `merge-beside-checkout` (TASK-143 to TASK-146)
+and TASK-150. Drafted 2026-11-15. Rescanned 2026-11-19: the merge-tree pre-flight, the
+conflict-marker checks and finishing in the merge worktree are in the relay's `merge.lua`, the
+conflict view is `conflict_view.dart` in Ops; the backlog tasks still say To Do and need checking
+against the code and a test.
 
 ## Why
 

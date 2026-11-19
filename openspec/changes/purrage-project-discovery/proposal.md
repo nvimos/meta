@@ -1,7 +1,7 @@
 # project discovery from a directory crawler
 
 Tags: integrate-purrage
-Status: Open proposal, not decided, not to be implemented yet. Part 4 of 5 in the Purrage integration.
+Status: Needs Test (approved and built on 2026-11-19; three tasks done, one waits for the user's test; see doc-76). Part 4 of 5 in the Purrage integration.
 Tasks: TASK-171, TASK-172, TASK-173, TASK-174.
 
 ## Why

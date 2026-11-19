@@ -1,7 +1,7 @@
 # backend seam for a second repository backend
 
 Tags: integrate-purrage
-Status: Open proposal, not decided, not to be implemented yet. Part 1 of 5 in the Purrage integration.
+Status: Needs Test (approved and built on 2026-11-19; the task waits for the user's test; see doc-76). Part 1 of 5 in the Purrage integration.
 Tasks: TASK-154.
 
 ## Why

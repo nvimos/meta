@@ -1,7 +1,7 @@
 # local Git backend, read-only
 
 Tags: integrate-purrage
-Status: Open proposal, not decided, not to be implemented yet. Part 2 of 5 in the Purrage integration.
+Status: Needs Test (approved and built on 2026-11-19; four tasks done, four wait for the user's test; see doc-76). Part 2 of 5 in the Purrage integration.
 Tasks: TASK-155, TASK-156, TASK-157, TASK-158, TASK-159, TASK-160, TASK-161, TASK-186.
 
 ## Why

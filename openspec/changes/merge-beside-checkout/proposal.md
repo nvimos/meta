@@ -1,6 +1,9 @@
 # merge beside the checkout
 
-Status: To Do (backlog TASK-143). The open questions were answered on 2026-11-14 (see Decisions).
+Status: In Progress (backlog TASK-143). The open questions were answered on 2026-11-14 (see Decisions).
+Rescanned 2026-11-19: built in the relay (merge without a checkout, the checkout brought forward,
+the refusal on unsaved buffers, the merge worktree) and in Ops (the merge button, its notes, the
+rules in PLAN.md); its backlog tasks still say To Do and need checking against the code and a test.
 The work is in backlog tasks, not in a tasks.md: TASK-143 clean merge without a checkout, TASK-144
 bring the checkout forward, TASK-145 refuse on unsaved buffers, TASK-146 merge worktree for
 conflicts, TASK-147 dialogs and notes in Ops, TASK-148 merge rules in PLAN.md.

@@ -1,7 +1,7 @@
 # local Git actions and the Purrage action model
 
 Tags: integrate-purrage
-Status: Open proposal, not decided, not to be implemented yet. Part 3 of 5 in the Purrage integration.
+Status: Needs Test (approved and built on 2026-11-19; nine tasks done, three wait for the user's test; see doc-76). Part 3 of 5 in the Purrage integration.
 Tasks: TASK-188, TASK-162, TASK-163, TASK-164, TASK-165, TASK-166, TASK-167, TASK-168, TASK-169, TASK-170, TASK-184, TASK-185.
 
 ## Why
