@@ -44,6 +44,20 @@ Changes, Add and Ignore, Repos, Tasks, History, Help) all run against the fake r
 A banner (or a mark in the status bar) says this is a demo whose changes stay in this browser, and
 links to the release page for the real app.
 
+### Taking the work out: patches
+
+The mocked writes don't have to be thrown away. Everything the visitor did is a set of real changes
+to real files: commits with messages, staged hunks, edited task files. The demo can hand them out
+as patches, the same text git itself would produce, to download as a file or copy to the
+clipboard. Applied in a real checkout (`git am` for commits, `git apply` for the rest), they become
+real work.
+
+That makes the web version more than a toy. Someone can open a project's planning in the browser,
+tick boxes, move a task to In Progress, write a new task or fix a typo in a proposal, and send the
+result as a patch or paste it into a pull request, all without cloning anything. The demo stays
+read-only towards the remote; the patch is how the work leaves the browser, and the person decides
+where it goes.
+
 Later, the same build could open other repos: a visitor pastes a GitHub URL and the demo reads
 that repo's planning and files instead of the baked-in ones. That is a second step and not part of
 the first version; see the open questions.
@@ -66,6 +80,12 @@ three-way merge in Dart, and the branch that conflicts on purpose.)
 **Starting over.** Erik's colleague Nora opens the same link in the same browser the next day and
 sees Erik's commit. She clicks Reset demo and gets the repo as it was. (The layer in
 `localStorage`, and the reset.)
+
+**Taking a change home.** Nora reads the planning in the browser and sees that task 142 is
+already done. She ticks its last box, sets it to Done, and commits "backlog: task 142 done". Then
+she clicks "Export patches" and copies them. In her real checkout of `nvimos/meta` she runs
+`git am` on the copied text, and the commit is there, with her message, ready to push. (The
+patch export.)
 
 **What isn't there.** Nora looks for the Neovim connection. The web build doesn't show it; the
 banner says the full app has it and links to the download. (Desktop-only parts left out.)
@@ -118,6 +138,23 @@ banner says the full app has it and links to the download. (Desktop-only parts l
   (JSON); the starting point comes from the baked-in JSON; Reset deletes the key
 - `localStorage` holds about 5 MB per site; the demo repo must stay well under it, or the layer
   moves to IndexedDB
+
+### Patch export
+
+- commits made in the demo: one `git format-patch` style mail per commit (`From`, `Subject`,
+  `Date`, the message, the unified diff), all in one mbox text, so `git am` takes them in order
+- uncommitted changes: a plain unified diff (`diff --git a/... b/...`) of index and working tree
+  against HEAD, for `git apply` (staged and unstaged as one patch, or two; to decide)
+- the diffs come from the same line diff the views use; headers carry the file modes and the
+  `index <old>..<new>` blob ids only if the fake computes real git blob hashes (SHA-1 of
+  `blob <size>\0<content>`), else they are left out, which `git apply` accepts
+- the base commit is named (`base-commit:` trailer), so the receiver knows where the patches fit;
+  with a baked-in snapshot that is the real commit sha it was taken from
+- Download (a `.patch` / `.mbox` file through a browser download) and Copy (the clipboard API)
+- for a real repo opened by URL the patches apply to that repo; for the made-up demo repo they are
+  only a demonstration
+- line endings and a missing newline at the end of a file must come out exactly as git writes
+  them, or `git apply` refuses; tests apply the exported patches with real git
 
 ### Baking the data
 
@@ -198,3 +235,14 @@ banner says the full app has it and links to the download. (Desktop-only parts l
     Which ones collide, and do they need web alternatives?
 15. **Size of the work.** Rough guess: one to two weeks, most of it the three-way merge and the
     ignore matching. Is that worth it now, or after the release and CI work?
+16. **Git in Dart is a project of its own.** A fake that covers status, hunks, commits, merge and
+    ignore rules is a small git. Can the first version be much smaller: Tasks edits and file edits
+    only, with diffs against the snapshot and patch export, and no branches, merge or rebase? The
+    git modes would then come later, or show the baked-in history read-only.
+17. **Patches as the way out.** Is export (download, clipboard) enough, or should the demo also
+    offer to open a pull request on GitHub with the patches (needs a login, so a token or an OAuth
+    app, and then it is no longer a static site without secrets)? Commit author: ask the visitor
+    for a name and email once, or leave a placeholder for `git am` to keep?
+18. **Patches against a changing remote.** The snapshot is from a commit that may be old by the
+    time the patch is applied. Is the `base-commit:` trailer enough, or should the demo warn when
+    the snapshot is older than the remote's `main`?

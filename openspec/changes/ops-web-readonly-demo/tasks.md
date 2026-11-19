@@ -22,6 +22,9 @@ Draft: the open questions in `proposal.md` come first; these tasks change with t
 - [ ] 2.5 `listFiles`, `readFiles`, `setLines`, `move`
 - [ ] 2.6 the layer in browser storage, with a version and Reset
 
+- [ ] 2.7 patch export: commits as an mbox for `git am`, uncommitted changes as a diff for
+  `git apply`; Download and Copy; tests apply them with real git
+
 ## 3. Data
 
 - [ ] 3.1 `tool/demo_export.dart`: a git repo to the demo JSON
