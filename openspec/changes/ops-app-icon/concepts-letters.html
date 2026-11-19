@@ -1,0 +1,142 @@
+<title>Ops Letter Icons</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: the wordmark first on dark and light, then one row per tile variant: large icon, taskbar sizes, the idea. */
+:root {
+  --bg: #f3f6f8; --fg: #14202b; --muted: #5a6b78; --line: #d8e0e6; --card: #ffffff; --pick: #2f8f4e;
+  --tile-dark: #0f1d29; --tile-light: #e9eef2;
+  --sans: "Inter", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0d151c; --fg: #e3eaf0; --muted: #8fa0ad; --line: #22313d; --card: #131f29; --pick: #5cbf6e; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #0d151c; --fg: #e3eaf0; --muted: #8fa0ad; --line: #22313d; --card: #131f29; --pick: #5cbf6e; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--sans); line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 48px; }
+main { max-width: 920px; margin: 0 auto; display: grid; gap: 20px; }
+h1 { font-size: 1.6rem; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 65ch; margin: 0; }
+.concept { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+.concept > div { min-width: 0; }
+.big { width: 160px; height: 160px; }
+h2 { font-size: 1.1rem; margin: 0 0 4px; }
+h2 .tag { font-family: var(--mono); font-size: .75rem; color: var(--muted); font-weight: 500; margin-left: 8px; }
+p { margin: 0 0 12px; max-width: 65ch; }
+.sizes { display: flex; flex-wrap: wrap; gap: 12px; }
+.strip { display: flex; align-items: flex-end; gap: 14px; padding: 10px 14px; border-radius: 6px; }
+.strip.dark { background: var(--tile-dark); } .strip.light { background: var(--tile-light); }
+.strip figure { margin: 0; display: grid; justify-items: center; gap: 4px; }
+.strip figcaption { font-family: var(--mono); font-size: .65rem; color: #8494a0; font-variant-numeric: tabular-nums; }
+.pick { border-color: var(--pick); }
+.pick h2::after { content: "my pick"; font-family: var(--mono); font-size: .7rem; color: var(--pick); margin-left: 10px; }
+.word { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.word > div { display: grid; place-items: center; padding: 28px 16px; border-radius: 10px; }
+.word .dark { background: var(--tile-dark); } .word .light { background: var(--tile-light); }
+.word svg { width: min(100%, 300px); height: auto; aspect-ratio: 78 / 34; }
+@media (max-width: 560px) { .concept { grid-template-columns: 1fr; } }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- hard split on the 45 degree line: green top-left, blue bottom-right -->
+    <linearGradient id="g-split" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5fbb46"/><stop offset=".5" stop-color="#5fbb46"/>
+      <stop offset=".5" stop-color="#2f86d6"/><stop offset="1" stop-color="#2f86d6"/>
+    </linearGradient>
+
+    <!-- each letter is 22 wide, x-height 26, stroke 6, ends cut at 45 degrees -->
+    <g id="g-o">
+      <path fill-rule="evenodd" fill="url(#g-split)"
+        d="M6 0H16L22 6V20L16 26H6L0 20V6Z M8 6H14L16 8V18L14 20H8L6 18V8Z"/>
+      <polygon points="16,0 22,6 16,6" fill="#6ac0f5"/>
+    </g>
+    <g id="g-p">
+      <polygon points="0,6 6,6 6,34 0,28" fill="#5fbb46"/>
+      <use href="#g-o"/>
+    </g>
+    <g id="g-s">
+      <polygon points="0,6 8,6 22,20 14,20" fill="#6ac0f5"/>
+      <polygon points="0,6 6,0 22,0 16,6" fill="#5fbb46"/>
+      <polygon points="22,20 16,26 0,26 6,20" fill="#2f86d6"/>
+    </g>
+
+    <!-- the word, no tile -->
+    <symbol id="ic-word" viewBox="0 0 78 34">
+      <use href="#g-o"/><use href="#g-p" x="28"/><use href="#g-s" x="56"/>
+    </symbol>
+
+    <!-- tile with the whole word -->
+    <symbol id="ic-ops" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="13" fill="#10202e"/>
+      <g transform="translate(4.7 20) scale(.7)">
+        <use href="#g-o"/><use href="#g-p" x="28"/><use href="#g-s" x="56"/>
+      </g>
+    </symbol>
+
+    <!-- tile with the first two letters -->
+    <symbol id="ic-op" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="13" fill="#10202e"/>
+      <g transform="translate(7 15)"><use href="#g-o"/><use href="#g-p" x="28"/></g>
+    </symbol>
+
+    <!-- tile with one big letter -->
+    <symbol id="ic-o" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="13" fill="#10202e"/>
+      <g transform="translate(13.3 9.9) scale(1.7)"><use href="#g-o"/></g>
+    </symbol>
+  </defs>
+</svg>
+
+<main>
+  <h1>Ops letter icons</h1>
+  <p class="lede">The word ops drawn in one piece. Every stroke is a flat slab whose end is cut on the 45° line, the way Flutter's bars end. Colours follow Neovim: green on the upper left, blue on the lower right, with a lighter sky-blue ribbon where the two meet. The o and p are octagonal rings, the s is two bars joined by a 45° diagonal.</p>
+
+  <section class="word" aria-label="The word on dark and light">
+    <div class="dark"><svg role="img" aria-label="ops wordmark on dark"><use href="#ic-word"/></svg></div>
+    <div class="light"><svg role="img" aria-label="ops wordmark on light"><use href="#ic-word"/></svg></div>
+  </section>
+
+  <section class="concept">
+    <svg class="big" role="img" aria-label="ops on a tile"><use href="#ic-ops"/></svg>
+    <div>
+      <h2>ops <span class="tag">all three letters on a tile</span></h2>
+      <p>The full word. At 32 px and up it reads clearly. At 16 px the strokes are about one pixel wide, so the letters turn into coloured blocks.</p>
+      <div class="sizes" data-icon="ic-ops"></div>
+    </div>
+  </section>
+
+  <section class="concept pick">
+    <svg class="big" role="img" aria-label="op on a tile"><use href="#ic-op"/></svg>
+    <div>
+      <h2>op <span class="tag">first two letters, bigger</span></h2>
+      <p>Only the o and p, so each stroke is about half as wide again. The p's pointed stem and the o's folded corner stay visible down to 16 px. It reads as the start of "ops" rather than the full name.</p>
+      <div class="sizes" data-icon="ic-op"></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <svg class="big" role="img" aria-label="o on a tile"><use href="#ic-o"/></svg>
+    <div>
+      <h2>o <span class="tag">one letter, full tile</span></h2>
+      <p>A single octagonal ring, green on one side and blue on the other, with the sky-blue fold in the corner. The sturdiest at 16 px and the most like a logo, but the least tied to the name.</p>
+      <div class="sizes" data-icon="ic-o"></div>
+    </div>
+  </section>
+</main>
+
+<script>
+document.querySelectorAll('.sizes').forEach(function (box) {
+  var id = box.dataset.icon;
+  ['dark', 'light'].forEach(function (tone) {
+    var strip = document.createElement('div');
+    strip.className = 'strip ' + tone;
+    [48, 32, 24, 16].forEach(function (px) {
+      strip.insertAdjacentHTML('beforeend',
+        '<figure><svg width="' + px + '" height="' + px + '" aria-hidden="true"><use href="#' + id + '"/></svg>' +
+        '<figcaption>' + px + '</figcaption></figure>');
+    });
+    box.appendChild(strip);
+  });
+});
+</script>

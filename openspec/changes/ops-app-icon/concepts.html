@@ -1,0 +1,134 @@
+<title>Ops Icon Concepts</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one row per concept: the large icon, the same icon at taskbar sizes on light and dark, then the idea. */
+:root {
+  --bg: #f3f6f8; --fg: #14202b; --muted: #5a6b78; --line: #d8e0e6; --card: #ffffff;
+  --tile-dark: #0f1d29; --tile-light: #e9eef2;
+  --sans: "Inter", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0d151c; --fg: #e3eaf0; --muted: #8fa0ad; --line: #22313d; --card: #131f29; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #0d151c; --fg: #e3eaf0; --muted: #8fa0ad; --line: #22313d; --card: #131f29; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--sans); line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 48px; }
+main { max-width: 920px; margin: 0 auto; display: grid; gap: 20px; }
+h1 { font-size: 1.6rem; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 65ch; margin: 0; }
+.concept { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+.concept > div { min-width: 0; }
+.big { width: 160px; height: 160px; }
+h2 { font-size: 1.1rem; margin: 0 0 4px; }
+h2 .tag { font-family: var(--mono); font-size: .75rem; color: var(--muted); font-weight: 500; margin-left: 8px; }
+p { margin: 0 0 12px; max-width: 65ch; }
+.sizes { display: flex; flex-wrap: wrap; gap: 12px; }
+.strip { display: flex; align-items: flex-end; gap: 14px; padding: 10px 14px; border-radius: 6px; }
+.strip.dark { background: var(--tile-dark); } .strip.light { background: var(--tile-light); }
+.strip figure { margin: 0; display: grid; justify-items: center; gap: 4px; }
+.strip figcaption { font-family: var(--mono); font-size: .65rem; color: #8494a0; font-variant-numeric: tabular-nums; }
+.pick { border-color: #2f8f4e; }
+.pick h2::after { content: "recommended"; font-family: var(--mono); font-size: .7rem; color: #2f8f4e; margin-left: 10px; }
+@media (max-width: 560px) { .concept { grid-template-columns: 1fr; } }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6cc04a"/><stop offset="1" stop-color="#3a8a2e"/></linearGradient>
+    <linearGradient id="g-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fa9e8"/><stop offset="1" stop-color="#1b5fa8"/></linearGradient>
+    <linearGradient id="g-sky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fd0ff"/><stop offset="1" stop-color="#3b9be0"/></linearGradient>
+
+    <!-- A: prompt chevron + block cursor -->
+    <symbol id="ic-prompt" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="13" fill="#10202e"/>
+      <polygon points="13,13 25,13 41,32 29,32" fill="url(#g-sky)"/>
+      <polygon points="29,32 41,32 25,51 13,51" fill="#1d6fb8"/>
+      <polygon points="29,32 41,32 35,39" fill="#0f3f6e"/>
+      <rect x="43" y="41" width="10" height="10" rx="1" fill="url(#g-green)"/>
+    </symbol>
+
+    <!-- B: N from two slabs, the diagonal a folded ribbon -->
+    <symbol id="ic-slab" viewBox="0 0 64 64">
+      <polygon points="8,16 21,9 21,55 8,48" fill="url(#g-green)"/>
+      <polygon points="43,9 56,16 56,48 43,55" fill="url(#g-blue)"/>
+      <polygon points="21,9 31,9 43,40 43,55" fill="url(#g-sky)"/>
+      <polygon points="21,9 31,9 26,16" fill="#2a7a2a" opacity=".55"/>
+    </symbol>
+
+    <!-- C: diamond with a chevron cut out -->
+    <symbol id="ic-diamond" viewBox="0 0 64 64">
+      <polygon points="32,3 61,32 32,61 3,32" fill="url(#g-green)"/>
+      <polygon points="32,3 61,32 32,61" fill="url(#g-blue)" opacity=".9"/>
+      <polygon points="20,19 29,19 42,32 29,45 20,45 33,32" fill="#f4fbff"/>
+    </symbol>
+
+    <!-- D: tile split on the 45 degree line, cursor in the seam -->
+    <symbol id="ic-split" viewBox="0 0 64 64">
+      <clipPath id="tile-clip"><rect x="2" y="2" width="60" height="60" rx="13"/></clipPath>
+      <g clip-path="url(#tile-clip)">
+        <rect x="0" y="0" width="64" height="64" fill="url(#g-blue)"/>
+        <polygon points="0,0 40,0 0,40" fill="url(#g-green)"/>
+        <polygon points="40,0 52,0 0,52 0,40" fill="url(#g-sky)"/>
+      </g>
+      <rect x="35" y="35" width="13" height="16" rx="1.5" fill="#f4fbff"/>
+    </symbol>
+  </defs>
+</svg>
+
+<main>
+  <h1>Ops icon concepts</h1>
+  <p class="lede">Both logos are built from flat slanted slabs and a 45° fold. Flutter has blue bars folding into a chevron; Neovim has green and blue pillars joined by a diagonal. Each concept below borrows that geometry without copying either mark, and each is shown at the sizes Windows actually uses (taskbar 32, title bar 16).</p>
+
+  <section class="concept pick">
+    <svg class="big" role="img" aria-label="Concept A"><use href="#ic-prompt"/></svg>
+    <div>
+      <h2>A. Prompt <span class="tag">chevron + cursor</span></h2>
+      <p>A Flutter-style folded chevron as a shell prompt, followed by Neovim's green block cursor, on a dark tile. It reads as "an app that drives an editor" and stays clear at 16 px because the tile gives it a solid outline on any taskbar.</p>
+      <div class="sizes" data-icon="ic-prompt"></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <svg class="big" role="img" aria-label="Concept B"><use href="#ic-slab"/></svg>
+    <div>
+      <h2>B. Slab N <span class="tag">two pillars, ribbon diagonal</span></h2>
+      <p>The closest to both parents: green and blue pillars, with a light Flutter ribbon as the diagonal, and a shade where it folds over the pillar. It is the most recognizable, which also means it sits closest to the Neovim mark.</p>
+      <div class="sizes" data-icon="ic-slab"></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <svg class="big" role="img" aria-label="Concept C"><use href="#ic-diamond"/></svg>
+    <div>
+      <h2>C. Diamond <span class="tag">rotated tile, chevron cut</span></h2>
+      <p>A diamond split green and blue down the middle, with a white chevron punched through. Bold at small sizes; the least literal of the four.</p>
+      <div class="sizes" data-icon="ic-diamond"></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <svg class="big" role="img" aria-label="Concept D"><use href="#ic-split"/></svg>
+    <div>
+      <h2>D. Seam <span class="tag">split tile, cursor in the seam</span></h2>
+      <p>A rounded tile cut on the 45° line into the backend's green and the front end's blue, with a light ribbon along the cut and a block cursor on the blue side. It matches the modern Windows tile style best, but loses the most detail at 16 px.</p>
+      <div class="sizes" data-icon="ic-split"></div>
+    </div>
+  </section>
+</main>
+
+<script>
+document.querySelectorAll('.sizes').forEach(function (box) {
+  var id = box.dataset.icon;
+  ['dark', 'light'].forEach(function (tone) {
+    var strip = document.createElement('div');
+    strip.className = 'strip ' + tone;
+    [48, 32, 24, 16].forEach(function (px) {
+      strip.insertAdjacentHTML('beforeend',
+        '<figure><svg width="' + px + '" height="' + px + '" aria-hidden="true"><use href="#' + id + '"/></svg>' +
+        '<figcaption>' + px + '</figcaption></figure>');
+    });
+    box.appendChild(strip);
+  });
+});
+</script>

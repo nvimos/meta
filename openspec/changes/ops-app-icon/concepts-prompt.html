@@ -1,0 +1,173 @@
+<title>Ops Prompt Icons</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: concept A on top as the reference, then one row per variant: large icon, taskbar sizes on dark and light, the idea. */
+:root {
+  --bg: #f3f6f8; --fg: #14202b; --muted: #5a6b78; --line: #d8e0e6; --card: #ffffff; --pick: #2f8f4e;
+  --tile-dark: #0f1d29; --tile-light: #e9eef2;
+  --sans: "Inter", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0d151c; --fg: #e3eaf0; --muted: #8fa0ad; --line: #22313d; --card: #131f29; --pick: #5cbf6e; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #0d151c; --fg: #e3eaf0; --muted: #8fa0ad; --line: #22313d; --card: #131f29; --pick: #5cbf6e; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--sans); line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 48px; }
+main { max-width: 920px; margin: 0 auto; display: grid; gap: 20px; }
+h1 { font-size: 1.6rem; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 65ch; margin: 0; }
+.concept { display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+.concept > div { min-width: 0; }
+.big { width: 160px; height: 160px; }
+.ref { opacity: .85; }
+.ref .big { width: 112px; height: 112px; justify-self: center; }
+h2 { font-size: 1.1rem; margin: 0 0 4px; }
+h2 .tag { font-family: var(--mono); font-size: .75rem; color: var(--muted); font-weight: 500; margin-left: 8px; }
+p { margin: 0 0 12px; max-width: 65ch; }
+.sizes { display: flex; flex-wrap: wrap; gap: 12px; }
+.strip { display: flex; align-items: flex-end; gap: 14px; padding: 10px 14px; border-radius: 6px; }
+.strip.dark { background: var(--tile-dark); } .strip.light { background: var(--tile-light); }
+.strip figure { margin: 0; display: grid; justify-items: center; gap: 4px; }
+.strip figcaption { font-family: var(--mono); font-size: .65rem; color: #8494a0; font-variant-numeric: tabular-nums; }
+.pick { border-color: var(--pick); }
+.pick h2::after { content: "recommended"; font-family: var(--mono); font-size: .7rem; color: var(--pick); margin-left: 10px; }
+.row16 { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; padding: 12px 16px; border-radius: 6px; background: var(--tile-dark); }
+.row16 span { font-family: var(--mono); font-size: .7rem; color: #8494a0; }
+@media (max-width: 560px) { .concept { grid-template-columns: 1fr; } }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6cc04a"/><stop offset="1" stop-color="#3a8a2e"/></linearGradient>
+    <linearGradient id="g-sky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fd0ff"/><stop offset="1" stop-color="#3b9be0"/></linearGradient>
+    <clipPath id="tile-clip"><rect x="2" y="2" width="60" height="60" rx="13"/></clipPath>
+
+    <!-- A: the original prompt -->
+    <symbol id="ic-prompt" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="13" fill="#10202e"/>
+      <polygon points="13,13 25,13 41,32 29,32" fill="url(#g-sky)"/>
+      <polygon points="29,32 41,32 25,51 13,51" fill="#1d6fb8"/>
+      <polygon points="29,32 41,32 35,39" fill="#0f3f6e"/>
+      <rect x="43" y="41" width="10" height="10" rx="1" fill="url(#g-green)"/>
+    </symbol>
+
+    <!-- A1: the prompt inside an app window (title bar with three dots) -->
+    <symbol id="ic-window" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="13" fill="#10202e"/>
+      <rect x="0" y="0" width="64" height="16" fill="#1f3a52" clip-path="url(#tile-clip)"/>
+      <circle cx="13" cy="9.5" r="2.6" fill="#3fa9e8"/>
+      <circle cx="21" cy="9.5" r="2.6" fill="#6cc04a"/>
+      <circle cx="29" cy="9.5" r="2.6" fill="#5d7487"/>
+      <polygon points="13,22 23,22 37,37.5 27,37.5" fill="url(#g-sky)"/>
+      <polygon points="27,37.5 37,37.5 23,53 13,53" fill="#1d6fb8"/>
+      <polygon points="27,37.5 37,37.5 32,43" fill="#0f3f6e"/>
+      <rect x="40" y="44" width="10" height="9" rx="1" fill="url(#g-green)"/>
+    </symbol>
+
+    <!-- A2: the cursor heads a list of rows: a board of tasks -->
+    <symbol id="ic-board" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="13" fill="#10202e"/>
+      <polygon points="9,14 19,14 33,32 23,32" fill="url(#g-sky)"/>
+      <polygon points="23,32 33,32 19,50 9,50" fill="#1d6fb8"/>
+      <polygon points="23,32 33,32 28,38" fill="#0f3f6e"/>
+      <rect x="37" y="14" width="10" height="9" rx="1" fill="url(#g-green)"/>
+      <rect x="37" y="28" width="18" height="8" rx="1" fill="#3b9be0"/>
+      <rect x="37" y="41" width="14" height="8" rx="1" fill="#255e8f"/>
+    </symbol>
+
+    <!-- A3: o + prompt, the "o" of ops in green -->
+    <symbol id="ic-ring" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="13" fill="#10202e"/>
+      <circle cx="20" cy="32" r="9.5" fill="none" stroke="url(#g-green)" stroke-width="7"/>
+      <polygon points="33,15 43,15 56,32 46,32" fill="url(#g-sky)"/>
+      <polygon points="46,32 56,32 43,49 33,49" fill="#1d6fb8"/>
+      <polygon points="46,32 56,32 51,38" fill="#0f3f6e"/>
+    </symbol>
+
+    <!-- A4: the cursor is a small window: the prompt opens a GUI -->
+    <symbol id="ic-opens" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="13" fill="#10202e"/>
+      <polygon points="9,14 19,14 33,32 23,32" fill="url(#g-sky)"/>
+      <polygon points="23,32 33,32 19,50 9,50" fill="#1d6fb8"/>
+      <polygon points="23,32 33,32 28,38" fill="#0f3f6e"/>
+      <rect x="35" y="30" width="21" height="21" rx="2.5" fill="url(#g-green)"/>
+      <rect x="39" y="38" width="13" height="9" rx="1" fill="#10202e"/>
+    </symbol>
+  </defs>
+</svg>
+
+<main>
+  <h1>Ops prompt icons</h1>
+  <p class="lede">All four keep concept A's dark tile, folded chevron and green block. Each adds one thing so the icon says "a front end for operations", not "a terminal": a window frame, a list of tasks, the letter o, or a cursor that is itself a window.</p>
+
+  <section class="concept ref">
+    <svg class="big" role="img" aria-label="Concept A, the original"><use href="#ic-prompt"/></svg>
+    <div>
+      <h2>A. Prompt <span class="tag">the starting point</span></h2>
+      <p>Chevron and block cursor. Clear at 16 px, but it reads as a shell.</p>
+      <div class="sizes" data-icon="ic-prompt"></div>
+    </div>
+  </section>
+
+  <section class="concept pick">
+    <svg class="big" role="img" aria-label="Concept A1, window"><use href="#ic-window"/></svg>
+    <div>
+      <h2>A1. Window <span class="tag">prompt inside an app frame</span></h2>
+      <p>The tile gets a title bar with three dots, so the prompt sits inside a desktop window: a GUI wrapped around the editor. It changes A the least and still reads at 16 px, where the bar becomes a lighter top edge.</p>
+      <div class="sizes" data-icon="ic-window"></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <svg class="big" role="img" aria-label="Concept A2, board"><use href="#ic-board"/></svg>
+    <div>
+      <h2>A2. Board <span class="tag">cursor heads a task list</span></h2>
+      <p>The green cursor becomes the first row of a list, with two blue rows below it. It points at what Ops shows: tasks, files, pull requests. At 16 px the rows merge into stripes, which still reads as a list.</p>
+      <div class="sizes" data-icon="ic-board"></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <svg class="big" role="img" aria-label="Concept A3, o and prompt"><use href="#ic-ring"/></svg>
+    <div>
+      <h2>A3. o› <span class="tag">the o of ops, then the prompt</span></h2>
+      <p>A green ring before the chevron spells "o›", a short monogram for Ops. It ties the icon to the name, but drops the cursor, so the link to Neovim is weaker.</p>
+      <div class="sizes" data-icon="ic-ring"></div>
+    </div>
+  </section>
+
+  <section class="concept">
+    <svg class="big" role="img" aria-label="Concept A4, prompt opens a window"><use href="#ic-opens"/></svg>
+    <div>
+      <h2>A4. Opens <span class="tag">the cursor is a window</span></h2>
+      <p>The block cursor grows a title bar and a pane: the prompt produces a window. It keeps the chevron-plus-green-block shape of A exactly, and at 16 px falls back to A.</p>
+      <div class="sizes" data-icon="ic-opens"></div>
+    </div>
+  </section>
+
+  <h2>All at 16 px</h2>
+  <div class="row16">
+    <svg width="16" height="16" aria-hidden="true"><use href="#ic-prompt"/></svg><span>A</span>
+    <svg width="16" height="16" aria-hidden="true"><use href="#ic-window"/></svg><span>A1</span>
+    <svg width="16" height="16" aria-hidden="true"><use href="#ic-board"/></svg><span>A2</span>
+    <svg width="16" height="16" aria-hidden="true"><use href="#ic-ring"/></svg><span>A3</span>
+    <svg width="16" height="16" aria-hidden="true"><use href="#ic-opens"/></svg><span>A4</span>
+  </div>
+</main>
+
+<script>
+document.querySelectorAll('.sizes').forEach(function (box) {
+  var id = box.dataset.icon;
+  ['dark', 'light'].forEach(function (tone) {
+    var strip = document.createElement('div');
+    strip.className = 'strip ' + tone;
+    [48, 32, 24, 16].forEach(function (px) {
+      strip.insertAdjacentHTML('beforeend',
+        '<figure><svg width="' + px + '" height="' + px + '" aria-hidden="true"><use href="#' + id + '"/></svg>' +
+        '<figcaption>' + px + '</figcaption></figure>');
+    });
+    box.appendChild(strip);
+  });
+});
+</script>
