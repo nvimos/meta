@@ -1,4 +1,4 @@
-# Planning in nvimos-meta
+# planning in nvimos-meta
 
 Status: Done (backlog TASK-94)
 

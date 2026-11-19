@@ -1,4 +1,4 @@
-# blink.cmp in place of nvim-cmp
+# adopt blink over cmp
 
 Status: Done (backlog TASK-36)
 

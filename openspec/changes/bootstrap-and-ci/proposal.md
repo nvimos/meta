@@ -1,4 +1,4 @@
-# Bootstrap script and CI
+# bootstrap script and ci
 
 Status: To Do (backlog TASK-116)
 

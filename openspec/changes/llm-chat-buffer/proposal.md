@@ -1,4 +1,4 @@
-# LLM chat in a buffer
+# llm chat in a buffer
 
 Status: To Do (backlog TASK-27)
 

@@ -1,4 +1,4 @@
-# Adding a language in one documented step
+# documented add-a-language step
 
 Status: Done (backlog TASK-55)
 

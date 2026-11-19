@@ -1,4 +1,4 @@
-# Kubernetes YAML with the spec at hand
+# lookup kubernetes spec via editor
 
 Status: Needs Test (backlog TASK-26)
 
