@@ -21,12 +21,15 @@ Modes
 
 Main ideas
 
-- Neovim is the single source of truth. All git and file work goes through it; the app runs no
-  git itself and never edits text. Editing happens in Neovim.
+- When connected, Neovim is the single source of truth: git and file work go through it. The app
+  never edits text; editing happens in Neovim (or the editor I chose).
 - Bidirectional and live: what I do in the app shows in Neovim, and what happens in Neovim (edits,
   buffer switches, cursor, git state) shows in the app within a second or two.
 - Switching directories moves the connected Neovim there, or, if I want, starts a new Neovim per
   directory.
+- It also works without Neovim: by default it opens my last repository on its own and reads git
+  itself; Neovim is the backend when I connect to one. It never starts a Neovim unasked, and always
+  shows which backend it is on.
 - Clicking a line opens it in Neovim, without stepping on unsaved work and without showing the
   wrong version of a file.
 - Errors replace the thing that failed and can be read and copied in full.
