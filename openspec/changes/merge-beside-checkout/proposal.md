@@ -39,7 +39,8 @@ does the merge in its own storage, makes the merge commit there, and then moves 
 it. No folder has to be checked out and no files are written, so nobody's work is in the way. When
 Ops moves `main`, it first checks that `main` is still where it was when the merge started. If
 someone else committed to `main` in the meantime, the merge is not saved, nothing is lost, and Ops
-asks me to merge again.
+offers to rebase `fix/login-timeout` onto the new `main` and then merge it; I confirm it. Rebase is
+the preferred outcome, so `main` keeps one straight line of history.
 
 Some merges have conflicts: both branches changed the same lines. Those can't be finished without a
 place to resolve them, where someone opens the files with conflict markers, fixes them and commits.
@@ -149,7 +150,8 @@ small fix straight to `main`. I press Yes.
 
 The merge was worked out against the old `main`, so Ops does not save it. Nothing is lost: the
 agent's commit stays on `main`, and no merge commit is stored. I see a note that `main` changed
-during the merge and the merge should be run again, and the diff refreshes to the new `main`.
+during the merge and offers the rebase; if I confirm, the branch is rebased onto the new `main`, then
+merged, and the diff refreshes to it.
 
 ### Nothing in progress
 
