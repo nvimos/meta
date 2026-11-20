@@ -10,12 +10,13 @@ x at drag start, so no delta is lost between frames; the width goes through a `V
 that only the pane listens to, so the list and the preview are relaid but never rebuilt; and the
 content widget stays the same instance on every frame of the drag.
 
-The other resizes have not had it. The Help mode takes 80-220 ms per width change in a widget test,
-though its content does not depend on the exact width: every `LayoutBuilder` pass built all key
-groups, tables and highlighted spans again, and ran `splitColumns` again, for a change that only
-needs a new layout. The Pull request and Changes left panes (`ResizablePane`) still add
-`details.delta` to the width of the last build and `setState` on every pointer event: the same
-lost-delta lever that the side pane had, and a rebuild per event.
+The other resizes have not had it. Help rebuilt every key group, table and highlighted span on
+each width change; that part is fixed (the split and the column tree are cached by column count
+and query), but the remaining cost is text layout: a hundred wrapped descriptions lay out again at
+every new width, 80-220 ms per frame in a widget test. The shell's `IndexedStack` also lays out all
+nine modes on every window resize, though only one is on screen. The Pull request and Changes left
+panes (`ResizablePane`) still add `details.delta` to the width of the last build and `setState` on
+every pointer event.
 
 ## The idea
 
@@ -24,25 +25,49 @@ For every drag-to-resize and every layout the window drives:
 - anchor the drag on the pointer (start size and start x), not on the last built size
 - one listener, at the widget that sizes; the neighbours and the content keep their widget
   instances and are relaid, not rebuilt
-- cache derived data by what it depends on: Help's column split and its rows depend on the column
-  count and the search query, not on the width
-- a width change that keeps the same structure is layout only
+- a window resize is a special case: keep the last laid-out content, scale it while the width
+  moves, and reflow once the window has been still for a moment
+- a hidden mode or pane is not laid out at all; it keeps its state and scroll, and lays out when
+  it is shown again
 
-## Where it applies
+## Help: the decisions
 
-- Help (first, TASK-198): the key columns reflow with the window
-- Pull request and Changes: the left sidebar edge (`ResizablePane`)
-- Tasks: the detail panel and the list as the window narrows
-- Add and Ignore's side pane: done in TASK-191, the reference
+- **Freeze and reflow.** A width change keeps the last laid-out table. The table reflows once,
+  **150 ms** after the last width change (a window drag has no reliable end event).
+- **Uniform scale.** While frozen, the table scales on both axes to the new width, so text is
+  briefly smaller or larger but never stretched.
+- **One line while resizing.** During the frozen state the descriptions are a single line with an
+  ellipsis; normal wrapping returns with the reflow. This costs one rebuild at the start of the
+  drag and one at the end, not one per frame.
+- **360 px columns, 250 px floor.** The current look stays. No column-width setting. A column is
+  never narrower than **250 px**, during the drag or at rest; below that the right edge is clipped
+  (no horizontal scrollbar).
+- `UiTiming` span `help.resize` times a width change to the painted frame.
+
+## Hidden modes and panes
+
+- Replace the shell's `IndexedStack` with a keep-alive stack: every mode's element and render
+  object stay alive, so selection and scroll survive, but only the shown child is laid out and
+  painted. A hidden mode never lays out on a window resize; it lays out once when shown.
+- A child that was never laid out gets one layout the first time it is hidden (so it has a size);
+  after that it waits.
+- The same primitive applies to panes that are hidden inside a mode and still built.
+- This is the layout side of `ops-hidden-panes-idle`, which stops hidden states from doing I/O.
 
 ## Technical notes
 
 - Help: `_columns` ran inside `LayoutBuilder` and built new `_KeyColumn`s, `Table`s and
-  `Text.rich` spans every time. The split is now cached by column count and the column widgets by
-  (count, query), so `Row` gets the same instances and Flutter skips their build. Measured before:
-  80-220 ms per width change; `splitColumns` itself was at most 0.34 ms, and
-  `IntrinsicColumnWidth` was not the cost.
-- `ResizablePane`: replace `d.delta.dx` with the anchor, keep the width in a `ValueNotifier` so only
-  its `LayoutBuilder` listens, as `SidePane` does.
-- Measure with a `UiTiming` span (`help.resize`, `pr.resizeSide`, `changes.resizeSide`), and test
-  that a width change keeps the same content widget instances (`identical`).
+  `Text.rich` spans every time. The split is cached by column count and the column tree by
+  (count, query). The new freeze keeps that tree and applies a uniform `Transform.scale`; a
+  `Timer` (150 ms) ends the resize and rebuilds at the final width.
+- The 250 px floor means the laid-out content width is
+  `max(available, count * 250 + padding)`; the view clips rather than shrinking a column.
+- `ResizablePane`: replace `d.delta.dx` with the anchor (the side pane already does this).
+- Keep-alive stack: a `MultiChildRenderObjectWidget` over a `RenderBox` with
+  `ContainerRenderObjectMixin`; `performLayout` lays out the shown child, and the first time
+  each hidden child; `paint` and `hitTestChildren` use only the shown child. `ExcludeSemantics`
+  stays as it is.
+- Tests: Help keeps the same `RichText` instances between two widths in one column count (done);
+  a resize keeps the old tree until 150 ms and then reflows; a column is at least 250 px and the
+  overflow clips; the keep-alive stack does not lay out a hidden mode (a counting child render
+  object) and lays it out once when shown.
