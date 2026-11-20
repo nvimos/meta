@@ -53,6 +53,13 @@ For every drag-to-resize and every layout the window drives:
   after that it waits.
 - The same primitive applies to panes that are hidden inside a mode and still built.
 - This is the layout side of `ops-hidden-panes-idle`, which stops hidden states from doing I/O.
+- **Tried and reverted 2026-11-20.** The first version laid out a hidden child once and then never
+  again. A hidden mode that changed (a load, a notice) stayed dirty; the semantics pass then threw
+  `!semantics.parentDataDirty` and `!childSemantics.renderObject._needsLayout` every frame, and the
+  live log filled with thousands of assertions. It also delayed layout-built content (a filter
+  field) by a frame on a mode switch. The app is back on `IndexedStack`. A retry needs a dirty
+  hidden subtree to lay itself out (a relayout boundary was not enough in practice) or to leave
+  the render tree without losing its state.
 
 ## Technical notes
 
@@ -66,8 +73,7 @@ For every drag-to-resize and every layout the window drives:
 - Keep-alive stack: a `MultiChildRenderObjectWidget` over a `RenderBox` with
   `ContainerRenderObjectMixin`; `performLayout` lays out the shown child, and the first time
   each hidden child; `paint` and `hitTestChildren` use only the shown child. `ExcludeSemantics`
-  stays as it is.
-- Tests: Help keeps the same `RichText` instances between two widths in one column count (done);
-  a resize keeps the old tree until 150 ms and then reflows; a column is at least 250 px and the
-  overflow clips; the keep-alive stack does not lay out a hidden mode (a counting child render
-  object) and lays it out once when shown.
+  stays as it is. Reverted: see the note above; the child must never stay dirty.
+- Tests: Help keeps the same `RichText` instances on a drag frame and reflows after 150 ms; a
+  column is at least 250 px and the overflow clips. The keep-alive stack tests are removed with
+  the implementation.
