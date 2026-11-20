@@ -5,12 +5,13 @@
 - [x] 1.1 Help: cache the split by column count and the column tree by (count, query), so a
   width change in the same structure lays out and does not rebuild the key rows
 - [x] 1.2 Help: a `UiTiming` span (`help.resize`), and the rule in CLAUDE.md and PLAN.md
-- [ ] 1.3 Help: freeze the table on a width change; scale it uniformly to the new width; reflow
+- [x] 1.3 Help: freeze the table on a width change; scale it uniformly to the new width; reflow
   150 ms after the last change; one-line descriptions while resizing, wrapping at rest
-- [ ] 1.4 Help: 360 px columns, a 250 px floor, and clip the right edge below it (no setting)
-- [ ] 1.5 keep-alive stack in the shell: hidden modes keep state and scroll but are not laid out;
+- [x] 1.4 Help: 360 px columns, a 250 px floor, and clip the right edge below it (no setting)
+- [x] 1.5 keep-alive stack in the shell: hidden modes keep state and scroll but are not laid out;
   a shown mode lays out once
-- [ ] 1.6 hidden panes that are still built use the same primitive
+- [x] 1.6 hidden panes that are still built use the same primitive; checked: Add and Ignore builds
+  one of its two side panes at a time, so there is nothing to skip today
 - [ ] 1.7 Pull request and Changes sidebar: anchor the drag on the pointer; only the pane listens
   to the width, through a `ValueNotifier`
 
