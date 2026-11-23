@@ -1,6 +1,6 @@
 # ops app icon
 
-Status: In Progress (backlog TASK-130)
+Status: Done (backlog TASK-130)
 
 ## Why
 
