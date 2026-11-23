@@ -36,4 +36,4 @@
 - [x] 4.1 CLAUDE.md: the cause, the fix, the helper
 - [ ] 4.2 check a `make live` run: no `Failed to update ui::AXTree` while hovering tooltips and
   switching modes by key
-- [ ] 4.3 file the Flutter issue
+- [x] 4.3 file the Flutter issue: https://github.com/flutter/flutter/issues/197194

@@ -20,5 +20,5 @@
   checked by hand yet
 - [x] 2.4 remove the temporary commit trace (`[commit-trace]`, `_TracedFocusNode`)
 - [x] 2.5a write the trace technique down, with the code to add it (`trace-technique.md`)
-- [ ] 2.5 CLAUDE.md: the cause and the rule for buttons inside a text field
-- [ ] 2.6 file the Flutter issue
+- [x] 2.5 CLAUDE.md: the cause and the rule for buttons inside a text field
+- [x] 2.6 file the Flutter issue: https://github.com/flutter/flutter/issues/197193
